@@ -1,0 +1,17 @@
+F:\csharp\GP2 Slot and Tyre Editor\GP2 Slot and Tyre Editor\bin\x86\Debug\net6.0-windows\GP2 Slot and Tyre Editor.exe
+F:\csharp\GP2 Slot and Tyre Editor\GP2 Slot and Tyre Editor\bin\x86\Debug\net6.0-windows\lib\Gp2lib.dll
+F:\csharp\GP2 Slot and Tyre Editor\GP2 Slot and Tyre Editor\bin\x86\Debug\net6.0-windows\GP2 Slot and Tyre Editor.deps.json
+F:\csharp\GP2 Slot and Tyre Editor\GP2 Slot and Tyre Editor\bin\x86\Debug\net6.0-windows\GP2 Slot and Tyre Editor.runtimeconfig.json
+F:\csharp\GP2 Slot and Tyre Editor\GP2 Slot and Tyre Editor\bin\x86\Debug\net6.0-windows\GP2 Slot and Tyre Editor.dll
+F:\csharp\GP2 Slot and Tyre Editor\GP2 Slot and Tyre Editor\bin\x86\Debug\net6.0-windows\GP2 Slot and Tyre Editor.pdb
+F:\csharp\GP2 Slot and Tyre Editor\GP2 Slot and Tyre Editor\obj\x86\Debug\net6.0-windows\GP2_Slot_and_Tyre_Editor.Form1.resources
+F:\csharp\GP2 Slot and Tyre Editor\GP2 Slot and Tyre Editor\obj\x86\Debug\net6.0-windows\GP2 Slot and Tyre Editor.csproj.GenerateResource.cache
+F:\csharp\GP2 Slot and Tyre Editor\GP2 Slot and Tyre Editor\obj\x86\Debug\net6.0-windows\GP2 Slot and Tyre Editor.GeneratedMSBuildEditorConfig.editorconfig
+F:\csharp\GP2 Slot and Tyre Editor\GP2 Slot and Tyre Editor\obj\x86\Debug\net6.0-windows\GP2 Slot and Tyre Editor.AssemblyInfoInputs.cache
+F:\csharp\GP2 Slot and Tyre Editor\GP2 Slot and Tyre Editor\obj\x86\Debug\net6.0-windows\GP2 Slot and Tyre Editor.AssemblyInfo.cs
+F:\csharp\GP2 Slot and Tyre Editor\GP2 Slot and Tyre Editor\obj\x86\Debug\net6.0-windows\GP2 Slot and Tyre Editor.csproj.CoreCompileInputs.cache
+F:\csharp\GP2 Slot and Tyre Editor\GP2 Slot and Tyre Editor\obj\x86\Debug\net6.0-windows\GP2 Slot and Tyre Editor.dll
+F:\csharp\GP2 Slot and Tyre Editor\GP2 Slot and Tyre Editor\obj\x86\Debug\net6.0-windows\refint\GP2 Slot and Tyre Editor.dll
+F:\csharp\GP2 Slot and Tyre Editor\GP2 Slot and Tyre Editor\obj\x86\Debug\net6.0-windows\GP2 Slot and Tyre Editor.pdb
+F:\csharp\GP2 Slot and Tyre Editor\GP2 Slot and Tyre Editor\obj\x86\Debug\net6.0-windows\GP2 Slot and Tyre Editor.genruntimeconfig.cache
+F:\csharp\GP2 Slot and Tyre Editor\GP2 Slot and Tyre Editor\obj\x86\Debug\net6.0-windows\ref\GP2 Slot and Tyre Editor.dll
