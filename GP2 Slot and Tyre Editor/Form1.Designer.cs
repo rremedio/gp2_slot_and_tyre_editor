@@ -310,6 +310,7 @@
             label105 = new Label();
             label104 = new Label();
             savePage = new TabPage();
+            infoBox = new TextBox();
             label164 = new Label();
             label163 = new Label();
             label162 = new Label();
@@ -805,7 +806,6 @@
             driver0 = new Label();
             loadSaveLabel = new Label();
             loadSaveButton = new Button();
-            infoBox = new TextBox();
             tabsPage.SuspendLayout();
             magicDataPage.SuspendLayout();
             physicsPage.SuspendLayout();
@@ -4010,6 +4010,15 @@
             savePage.Size = new Size(1217, 785);
             savePage.TabIndex = 4;
             savePage.Text = "Saved Games";
+            // 
+            // infoBox
+            // 
+            infoBox.Enabled = false;
+            infoBox.Location = new Point(952, 67);
+            infoBox.Multiline = true;
+            infoBox.Name = "infoBox";
+            infoBox.Size = new Size(249, 200);
+            infoBox.TabIndex = 7;
             // 
             // label164
             // 
@@ -7380,7 +7389,6 @@
             driver27.Name = "driver27";
             driver27.Size = new Size(155, 15);
             driver27.TabIndex = 3;
-            driver27.Text = "Juan Pablo Montoya Junior";
             driver27.TextAlign = ContentAlignment.MiddleRight;
             // 
             // driver20
@@ -7420,7 +7428,6 @@
             driver26.Name = "driver26";
             driver26.Size = new Size(155, 15);
             driver26.TabIndex = 3;
-            driver26.Text = "Juan Pablo Montoya Junior";
             driver26.TextAlign = ContentAlignment.MiddleRight;
             // 
             // driver19
@@ -7671,15 +7678,6 @@
             loadSaveButton.Text = "File";
             loadSaveButton.UseVisualStyleBackColor = true;
             loadSaveButton.Click += loadSaveButton_Click;
-            // 
-            // infoBox
-            // 
-            infoBox.Enabled = false;
-            infoBox.Location = new Point(952, 67);
-            infoBox.Multiline = true;
-            infoBox.Name = "infoBox";
-            infoBox.Size = new Size(249, 200);
-            infoBox.TabIndex = 7;
             // 
             // Form1
             // 

@@ -1,0 +1,8 @@
+*.suo
+*.user
+_ReSharper.*
+**/bin
+./GP2 Slot and Tyre Editor/obj/
+./GP2 Slot and Tyre Editor/bin/
+**/packages
+**/.vs

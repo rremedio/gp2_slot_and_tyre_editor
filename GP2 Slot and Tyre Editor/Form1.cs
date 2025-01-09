@@ -1423,14 +1423,14 @@ namespace GP2_Slot_and_Tyre_Editor
             int[] driverNumbers = gp2lib.GetDriverNumbers();
             int[] playerNumbers = gp2lib.GetPlayerNumbers();
             int offset = 0;
-            for (int i = 0 ; i < playerNumbers.Length ; i++)
+            for (int i = 0; i < playerNumbers.Length; i++)
             {
                 if (playerNumbers[i] == driverNumbers[i])
                 {
                     offset++;
                 }
             }
-            for (int i = 0;i < number_of_cars; i++)
+            for (int i = 0; i < number_of_cars; i++)
             {
                 TextBox field_box = (TextBox)savePage.Controls[$"{boxName}{i}"];
                 field_box.Text = $"{setups[i][index + 8 * offset]}";
