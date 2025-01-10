@@ -59,7 +59,7 @@ namespace GP2_Slot_and_Tyre_Editor
 
         public static long[] TireAddresses = new long[]
         {
-            1282099,1282103,1282107,1282111,1282114,1282118,1282122,1282126
+            1282099,1282103,1282107,1282111,1282114,1282118,1282122,1282126, 1282130
         };
         public static long[] CCGripLevelAddresses = new long[]
         {

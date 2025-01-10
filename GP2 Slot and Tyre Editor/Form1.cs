@@ -539,6 +539,11 @@ namespace GP2_Slot_and_Tyre_Editor
                 {
                     textBox.Text = $"{value}";
                 }
+                if (i == 8)
+                {
+                    address = GP2Addresses.TireAddresses[8];
+                    miscBox18.Text = $"{gp2Handler.ReadWord(address)}";
+                }
             }
             for (int i = 9; i < 11; i++)
             {

@@ -806,6 +806,8 @@
             driver0 = new Label();
             loadSaveLabel = new Label();
             loadSaveButton = new Button();
+            label122 = new Label();
+            miscBox18 = new TextBox();
             tabsPage.SuspendLayout();
             magicDataPage.SuspendLayout();
             physicsPage.SuspendLayout();
@@ -2449,6 +2451,7 @@
             // miscPage
             // 
             miscPage.BackColor = SystemColors.Control;
+            miscPage.Controls.Add(miscBox18);
             miscPage.Controls.Add(miscBox8);
             miscPage.Controls.Add(miscBox7);
             miscPage.Controls.Add(miscBox14);
@@ -2465,6 +2468,7 @@
             miscPage.Controls.Add(miscBox3);
             miscPage.Controls.Add(miscBox2);
             miscPage.Controls.Add(miscBox1);
+            miscPage.Controls.Add(label122);
             miscPage.Controls.Add(label87);
             miscPage.Controls.Add(label86);
             miscPage.Controls.Add(label95);
@@ -2522,7 +2526,7 @@
             // miscBox14
             // 
             miscBox14.Enabled = false;
-            miscBox14.Location = new Point(87, 445);
+            miscBox14.Location = new Point(87, 504);
             miscBox14.Name = "miscBox14";
             miscBox14.Size = new Size(49, 23);
             miscBox14.TabIndex = 4;
@@ -2536,7 +2540,7 @@
             // 
             // miscBox10
             // 
-            miscBox10.Location = new Point(87, 263);
+            miscBox10.Location = new Point(87, 322);
             miscBox10.Name = "miscBox10";
             miscBox10.Size = new Size(49, 23);
             miscBox10.TabIndex = 4;
@@ -2550,14 +2554,14 @@
             // 
             // miscBox12
             // 
-            miscBox12.Location = new Point(87, 344);
+            miscBox12.Location = new Point(87, 403);
             miscBox12.Name = "miscBox12";
             miscBox12.Size = new Size(49, 23);
             miscBox12.TabIndex = 4;
             // 
             // miscBox11
             // 
-            miscBox11.Location = new Point(87, 309);
+            miscBox11.Location = new Point(87, 368);
             miscBox11.Name = "miscBox11";
             miscBox11.Size = new Size(49, 23);
             miscBox11.TabIndex = 4;
@@ -2565,7 +2569,7 @@
             // miscBox13
             // 
             miscBox13.Enabled = false;
-            miscBox13.Location = new Point(87, 418);
+            miscBox13.Location = new Point(87, 477);
             miscBox13.Name = "miscBox13";
             miscBox13.Size = new Size(49, 23);
             miscBox13.TabIndex = 4;
@@ -2579,7 +2583,7 @@
             // 
             // miscBox9
             // 
-            miscBox9.Location = new Point(87, 236);
+            miscBox9.Location = new Point(87, 295);
             miscBox9.Name = "miscBox9";
             miscBox9.Size = new Size(49, 23);
             miscBox9.TabIndex = 4;
@@ -2641,7 +2645,7 @@
             // 
             label95.AutoSize = true;
             label95.Enabled = false;
-            label95.Location = new Point(6, 448);
+            label95.Location = new Point(6, 507);
             label95.Name = "label95";
             label95.Size = new Size(62, 15);
             label95.TabIndex = 3;
@@ -2668,7 +2672,7 @@
             // label98
             // 
             label98.AutoSize = true;
-            label98.Location = new Point(6, 240);
+            label98.Location = new Point(6, 299);
             label98.Name = "label98";
             label98.Size = new Size(62, 15);
             label98.TabIndex = 3;
@@ -2677,7 +2681,7 @@
             // label90
             // 
             label90.AutoSize = true;
-            label90.Location = new Point(6, 266);
+            label90.Location = new Point(6, 325);
             label90.Name = "label90";
             label90.Size = new Size(32, 15);
             label90.TabIndex = 3;
@@ -2694,7 +2698,7 @@
             // 
             // label92
             // 
-            label92.Location = new Point(6, 347);
+            label92.Location = new Point(6, 406);
             label92.Name = "label92";
             label92.Size = new Size(80, 30);
             label92.TabIndex = 3;
@@ -2703,7 +2707,7 @@
             // label91
             // 
             label91.AutoSize = true;
-            label91.Location = new Point(6, 312);
+            label91.Location = new Point(6, 371);
             label91.Name = "label91";
             label91.Size = new Size(72, 15);
             label91.TabIndex = 3;
@@ -2713,7 +2717,7 @@
             // 
             label94.AutoSize = true;
             label94.Enabled = false;
-            label94.Location = new Point(6, 421);
+            label94.Location = new Point(6, 480);
             label94.Name = "label94";
             label94.Size = new Size(49, 15);
             label94.TabIndex = 3;
@@ -2739,7 +2743,7 @@
             // 
             // simultaneosCarsButton
             // 
-            simultaneosCarsButton.Location = new Point(158, 344);
+            simultaneosCarsButton.Location = new Point(158, 403);
             simultaneosCarsButton.Name = "simultaneosCarsButton";
             simultaneosCarsButton.Size = new Size(75, 23);
             simultaneosCarsButton.TabIndex = 2;
@@ -2749,7 +2753,7 @@
             // 
             // hGripExportButton
             // 
-            hGripExportButton.Location = new Point(158, 309);
+            hGripExportButton.Location = new Point(158, 368);
             hGripExportButton.Name = "hGripExportButton";
             hGripExportButton.Size = new Size(75, 23);
             hGripExportButton.TabIndex = 2;
@@ -2796,7 +2800,7 @@
             // sessionDurationButton
             // 
             sessionDurationButton.Enabled = false;
-            sessionDurationButton.Location = new Point(158, 418);
+            sessionDurationButton.Location = new Point(158, 477);
             sessionDurationButton.Name = "sessionDurationButton";
             sessionDurationButton.Size = new Size(75, 23);
             sessionDurationButton.TabIndex = 2;
@@ -2825,7 +2829,7 @@
             // 
             // ccGripExportButton
             // 
-            ccGripExportButton.Location = new Point(158, 236);
+            ccGripExportButton.Location = new Point(158, 295);
             ccGripExportButton.Name = "ccGripExportButton";
             ccGripExportButton.Size = new Size(75, 23);
             ccGripExportButton.TabIndex = 2;
@@ -2897,7 +2901,7 @@
             // 
             label93.AutoSize = true;
             label93.Enabled = false;
-            label93.Location = new Point(6, 396);
+            label93.Location = new Point(6, 455);
             label93.Name = "label93";
             label93.Size = new Size(95, 15);
             label93.TabIndex = 0;
@@ -2915,7 +2919,7 @@
             // label88
             // 
             label88.AutoSize = true;
-            label88.Location = new Point(6, 214);
+            label88.Location = new Point(6, 273);
             label88.Name = "label88";
             label88.Size = new Size(118, 15);
             label88.TabIndex = 0;
@@ -7679,6 +7683,22 @@
             loadSaveButton.UseVisualStyleBackColor = true;
             loadSaveButton.Click += loadSaveButton_Click;
             // 
+            // label122
+            // 
+            label122.AutoSize = true;
+            label122.Location = new Point(6, 209);
+            label122.Name = "label122";
+            label122.Size = new Size(28, 15);
+            label122.TabIndex = 3;
+            label122.Text = "Min";
+            // 
+            // miscBox18
+            // 
+            miscBox18.Location = new Point(87, 206);
+            miscBox18.Name = "miscBox18";
+            miscBox18.Size = new Size(49, 23);
+            miscBox18.TabIndex = 4;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -8490,5 +8510,7 @@
         private Label label166;
         private Label label165;
         private TextBox infoBox;
+        private TextBox miscBox18;
+        private Label label122;
     }
 }
