@@ -1,4 +1,4 @@
-## GP2 Slots and Tyre Editor 4.21 beta by rremedio
+## GP2 Slots and Tyre Editor 5 by rremedio
 
 This editor is able to edit the magic data, the tyre data, the physics data and some other data in Microprose Grand Prix 2 (a DOS game from the 90s). This is a version under development, maybe containing a lot of bugs.
 
