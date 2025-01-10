@@ -191,13 +191,13 @@ namespace GP2_Slot_and_Tyre_Editor
             {
                 // Calculate the start and end offsets for this car's data
                 int startOffset = 296 + carNumbers[i] * 48;
-                int endOffset = 303 + carNumbers[i] * 48;
+                int endOffset = 304 + carNumbers[i] * 48;
 
                 // Determine the length of data for this car
                 int length = endOffset - startOffset;
 
                 // Initialize the sub-array for this car
-                data[i] = new int[7];
+                data[i] = new int[9];
 
                 // Copy data from `file` into the sub-array
                 int k = 0;

@@ -1411,6 +1411,10 @@ namespace GP2_Slot_and_Tyre_Editor
                     infoBox.Text = info;
 
                     setAll("fw", 0, gp2Lib);
+                    setAll("rw", 1, gp2Lib);
+                    setAll("g1", 2, gp2Lib);
+                    setAll("g2", 3, gp2Lib);
+                    setAll("g3", 4, gp2Lib);
                 }
             }
         }
@@ -1433,7 +1437,7 @@ namespace GP2_Slot_and_Tyre_Editor
             for (int i = 0; i < number_of_cars; i++)
             {
                 TextBox field_box = (TextBox)savePage.Controls[$"{boxName}{i}"];
-                field_box.Text = $"{setups[i][index + 8 * offset]}";
+                field_box.Text = $"{setups[i][index + 9 * offset]}";
             }
         }
     }
