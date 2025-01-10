@@ -1415,6 +1415,9 @@ namespace GP2_Slot_and_Tyre_Editor
                     setAll("g1", 2, gp2Lib);
                     setAll("g2", 3, gp2Lib);
                     setAll("g3", 4, gp2Lib);
+                    setAll("g4", 5, gp2Lib);
+                    setAll("g5", 6, gp2Lib);
+                    setAll("g6", 7, gp2Lib);
                 }
             }
         }
