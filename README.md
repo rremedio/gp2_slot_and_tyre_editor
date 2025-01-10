@@ -80,7 +80,7 @@ Old .g2p files (older than Physics Editor 1.1) are not compatible with this vers
 
 - Power Curve: It may be the power in a given RPM, but I'm not sure. In GP4 they use it to calculate the torque curve. Thinking in a gap of more or less 435rpm between each value gives good results for me. But I'm not really sure.
 
-- - Asphalt Acceleration 1 and 2 - this values (probably max and min) control the acceleration of the human player's car when the tyres are on the asphalt. Increasing them, you will get faster acceleration with more wheelspin, while deacreasing you will have slower acceleration with less wheelspin.
+- Asphalt Acceleration 1 and 2 - this values (probably max and min) control the acceleration of the human player's car when the tyres are on the asphalt. Increasing them, you will get faster acceleration with more wheelspin, while deacreasing you will have slower acceleration with less wheelspin.
 
 #### Tyre Data
 - Tyre Wear - Higher values will make the tyres wear faster. 
