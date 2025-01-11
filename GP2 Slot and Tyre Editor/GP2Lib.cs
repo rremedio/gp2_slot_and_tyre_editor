@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Runtime.InteropServices;
 using System.DirectoryServices.ActiveDirectory;
+using System.Diagnostics;
 
 namespace GP2_Slot_and_Tyre_Editor
 {
@@ -136,6 +137,7 @@ namespace GP2_Slot_and_Tyre_Editor
 
         public int[] GetDriverNumbers()
         {
+            playerNumbers.Clear();
             List<int> numbers = new List<int>();
             for (int i = 7898; i < 7926; i++)
             {
@@ -145,7 +147,7 @@ namespace GP2_Slot_and_Tyre_Editor
                     value -= 128;
                     playerNumbers.Add(value);
                 }
-                if (value != 0) numbers.Add(value);
+                numbers.Add(value);
             }
             return numbers.ToArray();
         }
@@ -154,8 +156,8 @@ namespace GP2_Slot_and_Tyre_Editor
         {
             int[] carNumbers = GetDriverNumbers();
             driverNames.Clear();
-            int carCount = GetNumberOfCars();
-            for (int i = 0; i < carCount; i++)
+            //int carCount = GetNumberOfCars();
+            for (int i = 0; i < 28; i++)
             {
                 int offset = 8038 - 24 + carNumbers[i] * 24;
                 string name = Encoding.ASCII.GetString(file, offset, 24).Split('\0')[0];
@@ -174,20 +176,20 @@ namespace GP2_Slot_and_Tyre_Editor
             List<int> numbers = new List<int>();
             for (int i = 0x2dd7; i < 0x2dd7 + 28; i++)
             {
-                byte value = file[i];
+                int value = file[i];
                 if (value > 50) value -= 128;
-                if (value != 0) numbers.Add(value);
+                if (value != 0 && value != 128) numbers.Add(value);
             }
             return numbers.ToArray();
         }
 
         public int[][] GetAllSetups ()
         {
-            int number_of_cars = GetNumberOfCars();
+            //int number_of_cars = GetNumberOfCars();
             int[] carNumbers = GetDriverNumbers();
-            int[][] data = new int[number_of_cars][];
+            int[][] data = new int[28][];
 
-            for (int i = 0; i < number_of_cars; i++)
+            for (int i = 0; i < 28; i++)
             {
                 // Calculate the start and end offsets for this car's data
                 int startOffset = 296 + carNumbers[i] * 48;
@@ -215,6 +217,68 @@ namespace GP2_Slot_and_Tyre_Editor
         public int[] GetPlayerNumbers()
         {
             return playerNumbers.ToArray();
+        }
+
+        public int GetSessionInfo()
+        {
+            int type = 0;
+
+            // Read the byte at offset 0x0B (11 in decimal) from the file
+            if (file != null && file.Length > 0x0B)
+            {
+                type = file[0x0B];
+            }
+
+            return type;
+        }
+
+        public int[] GetPitStructs()
+        {
+            List<int> pits = new List<int>();
+            int[] order = GetStructOrder();
+            int[] carNumbers = GetDriverNumbers();
+           // int numberOfCars = GetNumberOfCars();
+
+            // Create order2 by finding the index of each car number in the order array
+            List<int> order2 = carNumbers.Select(car => Array.IndexOf(order, car)).ToList();
+            Debug.WriteLine(string.Join(", ", order));
+            Debug.WriteLine(string.Join(", ", carNumbers));
+            Debug.WriteLine(string.Join(", ", order2));
+            // Iterate through the number of cars and retrieve the relevant bytes
+            for (int i = 0; i < 28; i++)
+            {
+                int orderedIndex = order2[i];
+                if (order2[i] == -1) orderedIndex = 27;
+                int baseIndex = 0x3E4B + orderedIndex * 0x330 + 0x274;
+
+                // Extract bytes from the range [baseIndex, baseIndex + 3]
+                for (int j = baseIndex; j <= baseIndex + 3; j++)
+                {
+                    pits.Add(file[j]);
+                }
+            }
+
+            return pits.ToArray();
+        }
+
+        public int[] GetPitBase()
+        {
+            List<int> pits = new List<int>();
+            int[] carNumbers = GetDriverNumbers();
+           // int numberOfCars = GetNumberOfCars();
+
+            for (int i = 0; i <28; i++)
+            {
+                int startIndex = 344 - 48 + carNumbers[i] * 48 + 10;
+
+                // Extract bytes from the range [startIndex, startIndex + 4]
+                for (int j = startIndex; j <= startIndex + 4; j++)
+                {
+                    pits.Add(file[j]);
+                }
+            }
+
+            return pits.ToArray();
         }
     }
 }

@@ -206,6 +206,7 @@
             physicsExportButton = new Button();
             physicsImportButton = new Button();
             miscPage = new TabPage();
+            miscBox18 = new TextBox();
             miscBox8 = new TextBox();
             miscBox7 = new TextBox();
             miscBox14 = new TextBox();
@@ -222,6 +223,7 @@
             miscBox3 = new TextBox();
             miscBox2 = new TextBox();
             miscBox1 = new TextBox();
+            label122 = new Label();
             label87 = new Label();
             label86 = new Label();
             label95 = new Label();
@@ -326,6 +328,8 @@
             label153 = new Label();
             label152 = new Label();
             label151 = new Label();
+            numbperLabel = new Label();
+            label123 = new Label();
             label159 = new Label();
             label150 = new Label();
             comboBox28 = new ComboBox();
@@ -464,94 +468,94 @@
             tt7 = new TextBox();
             textBox37 = new TextBox();
             textBox186 = new TextBox();
-            textBox411 = new TextBox();
+            fs0 = new TextBox();
             tt0 = new TextBox();
-            textBox25 = new TextBox();
-            textBox36 = new TextBox();
-            textBox353 = new TextBox();
-            textBox269 = new TextBox();
-            textBox185 = new TextBox();
-            textBox107 = new TextBox();
-            textBox352 = new TextBox();
-            textBox268 = new TextBox();
-            textBox184 = new TextBox();
-            textBox95 = new TextBox();
-            textBox351 = new TextBox();
-            textBox267 = new TextBox();
-            textBox183 = new TextBox();
-            textBox83 = new TextBox();
-            textBox350 = new TextBox();
-            textBox266 = new TextBox();
-            textBox182 = new TextBox();
-            textBox71 = new TextBox();
-            textBox349 = new TextBox();
-            textBox265 = new TextBox();
-            textBox181 = new TextBox();
-            textBox59 = new TextBox();
-            textBox348 = new TextBox();
-            textBox264 = new TextBox();
-            textBox180 = new TextBox();
-            textBox47 = new TextBox();
-            textBox347 = new TextBox();
-            textBox263 = new TextBox();
-            textBox179 = new TextBox();
-            textBox35 = new TextBox();
-            textBox346 = new TextBox();
-            textBox262 = new TextBox();
-            textBox178 = new TextBox();
-            textBox106 = new TextBox();
-            textBox345 = new TextBox();
-            textBox261 = new TextBox();
-            textBox177 = new TextBox();
-            textBox94 = new TextBox();
-            textBox344 = new TextBox();
-            textBox260 = new TextBox();
-            textBox176 = new TextBox();
-            textBox82 = new TextBox();
-            textBox343 = new TextBox();
-            textBox259 = new TextBox();
-            textBox175 = new TextBox();
-            textBox70 = new TextBox();
-            textBox342 = new TextBox();
-            textBox258 = new TextBox();
-            textBox174 = new TextBox();
-            textBox58 = new TextBox();
-            textBox341 = new TextBox();
-            textBox257 = new TextBox();
-            textBox173 = new TextBox();
-            textBox46 = new TextBox();
-            textBox340 = new TextBox();
-            textBox256 = new TextBox();
-            textBox172 = new TextBox();
-            textBox34 = new TextBox();
-            textBox339 = new TextBox();
-            textBox255 = new TextBox();
-            textBox171 = new TextBox();
-            textBox105 = new TextBox();
-            textBox338 = new TextBox();
-            textBox254 = new TextBox();
-            textBox170 = new TextBox();
-            textBox93 = new TextBox();
-            textBox337 = new TextBox();
-            textBox253 = new TextBox();
-            textBox169 = new TextBox();
-            textBox81 = new TextBox();
-            textBox336 = new TextBox();
-            textBox252 = new TextBox();
-            textBox168 = new TextBox();
-            textBox69 = new TextBox();
-            textBox335 = new TextBox();
-            textBox251 = new TextBox();
-            textBox167 = new TextBox();
-            textBox57 = new TextBox();
-            textBox334 = new TextBox();
-            textBox250 = new TextBox();
-            textBox166 = new TextBox();
-            textBox45 = new TextBox();
-            textBox333 = new TextBox();
-            textBox249 = new TextBox();
-            textBox165 = new TextBox();
-            textBox33 = new TextBox();
+            fl0 = new TextBox();
+            p30 = new TextBox();
+            p227 = new TextBox();
+            p220 = new TextBox();
+            p213 = new TextBox();
+            p26 = new TextBox();
+            p226 = new TextBox();
+            p219 = new TextBox();
+            p212 = new TextBox();
+            p25 = new TextBox();
+            p225 = new TextBox();
+            p218 = new TextBox();
+            p211 = new TextBox();
+            p24 = new TextBox();
+            p224 = new TextBox();
+            p217 = new TextBox();
+            p210 = new TextBox();
+            p23 = new TextBox();
+            p223 = new TextBox();
+            p216 = new TextBox();
+            p29 = new TextBox();
+            p22 = new TextBox();
+            p222 = new TextBox();
+            p215 = new TextBox();
+            p28 = new TextBox();
+            p21 = new TextBox();
+            p221 = new TextBox();
+            p214 = new TextBox();
+            p27 = new TextBox();
+            p20 = new TextBox();
+            p127 = new TextBox();
+            p121 = new TextBox();
+            p114 = new TextBox();
+            p17 = new TextBox();
+            p126 = new TextBox();
+            p120 = new TextBox();
+            p113 = new TextBox();
+            p15 = new TextBox();
+            p125 = new TextBox();
+            p119 = new TextBox();
+            p112 = new TextBox();
+            p14 = new TextBox();
+            p124 = new TextBox();
+            p118 = new TextBox();
+            p111 = new TextBox();
+            p13 = new TextBox();
+            p123 = new TextBox();
+            p117 = new TextBox();
+            p110 = new TextBox();
+            p12 = new TextBox();
+            p16 = new TextBox();
+            p116 = new TextBox();
+            p19 = new TextBox();
+            p11 = new TextBox();
+            p122 = new TextBox();
+            p115 = new TextBox();
+            p18 = new TextBox();
+            p10 = new TextBox();
+            np27 = new TextBox();
+            np20 = new TextBox();
+            np13 = new TextBox();
+            np6 = new TextBox();
+            np26 = new TextBox();
+            np19 = new TextBox();
+            np12 = new TextBox();
+            np5 = new TextBox();
+            np25 = new TextBox();
+            np18 = new TextBox();
+            np11 = new TextBox();
+            np4 = new TextBox();
+            np24 = new TextBox();
+            np17 = new TextBox();
+            np10 = new TextBox();
+            np3 = new TextBox();
+            np23 = new TextBox();
+            np16 = new TextBox();
+            np9 = new TextBox();
+            np2 = new TextBox();
+            np22 = new TextBox();
+            np15 = new TextBox();
+            np8 = new TextBox();
+            np1 = new TextBox();
+            np21 = new TextBox();
+            np14 = new TextBox();
+            np7 = new TextBox();
+            np0 = new TextBox();
             g627 = new TextBox();
             g620 = new TextBox();
             g613 = new TextBox();
@@ -806,8 +810,6 @@
             driver0 = new Label();
             loadSaveLabel = new Label();
             loadSaveButton = new Button();
-            label122 = new Label();
-            miscBox18 = new TextBox();
             tabsPage.SuspendLayout();
             magicDataPage.SuspendLayout();
             physicsPage.SuspendLayout();
@@ -2509,6 +2511,13 @@
             miscPage.TabIndex = 2;
             miscPage.Text = "Misc";
             // 
+            // miscBox18
+            // 
+            miscBox18.Location = new Point(87, 206);
+            miscBox18.Name = "miscBox18";
+            miscBox18.Size = new Size(49, 23);
+            miscBox18.TabIndex = 4;
+            // 
             // miscBox8
             // 
             miscBox8.Location = new Point(87, 172);
@@ -2622,6 +2631,15 @@
             miscBox1.Name = "miscBox1";
             miscBox1.Size = new Size(34, 23);
             miscBox1.TabIndex = 4;
+            // 
+            // label122
+            // 
+            label122.AutoSize = true;
+            label122.Location = new Point(6, 209);
+            label122.Name = "label122";
+            label122.Size = new Size(28, 15);
+            label122.TabIndex = 3;
+            label122.Text = "Min";
             // 
             // label87
             // 
@@ -3528,6 +3546,8 @@
             savePage.Controls.Add(label153);
             savePage.Controls.Add(label152);
             savePage.Controls.Add(label151);
+            savePage.Controls.Add(numbperLabel);
+            savePage.Controls.Add(label123);
             savePage.Controls.Add(label159);
             savePage.Controls.Add(label150);
             savePage.Controls.Add(comboBox28);
@@ -3666,94 +3686,94 @@
             savePage.Controls.Add(tt7);
             savePage.Controls.Add(textBox37);
             savePage.Controls.Add(textBox186);
-            savePage.Controls.Add(textBox411);
+            savePage.Controls.Add(fs0);
             savePage.Controls.Add(tt0);
-            savePage.Controls.Add(textBox25);
-            savePage.Controls.Add(textBox36);
-            savePage.Controls.Add(textBox353);
-            savePage.Controls.Add(textBox269);
-            savePage.Controls.Add(textBox185);
-            savePage.Controls.Add(textBox107);
-            savePage.Controls.Add(textBox352);
-            savePage.Controls.Add(textBox268);
-            savePage.Controls.Add(textBox184);
-            savePage.Controls.Add(textBox95);
-            savePage.Controls.Add(textBox351);
-            savePage.Controls.Add(textBox267);
-            savePage.Controls.Add(textBox183);
-            savePage.Controls.Add(textBox83);
-            savePage.Controls.Add(textBox350);
-            savePage.Controls.Add(textBox266);
-            savePage.Controls.Add(textBox182);
-            savePage.Controls.Add(textBox71);
-            savePage.Controls.Add(textBox349);
-            savePage.Controls.Add(textBox265);
-            savePage.Controls.Add(textBox181);
-            savePage.Controls.Add(textBox59);
-            savePage.Controls.Add(textBox348);
-            savePage.Controls.Add(textBox264);
-            savePage.Controls.Add(textBox180);
-            savePage.Controls.Add(textBox47);
-            savePage.Controls.Add(textBox347);
-            savePage.Controls.Add(textBox263);
-            savePage.Controls.Add(textBox179);
-            savePage.Controls.Add(textBox35);
-            savePage.Controls.Add(textBox346);
-            savePage.Controls.Add(textBox262);
-            savePage.Controls.Add(textBox178);
-            savePage.Controls.Add(textBox106);
-            savePage.Controls.Add(textBox345);
-            savePage.Controls.Add(textBox261);
-            savePage.Controls.Add(textBox177);
-            savePage.Controls.Add(textBox94);
-            savePage.Controls.Add(textBox344);
-            savePage.Controls.Add(textBox260);
-            savePage.Controls.Add(textBox176);
-            savePage.Controls.Add(textBox82);
-            savePage.Controls.Add(textBox343);
-            savePage.Controls.Add(textBox259);
-            savePage.Controls.Add(textBox175);
-            savePage.Controls.Add(textBox70);
-            savePage.Controls.Add(textBox342);
-            savePage.Controls.Add(textBox258);
-            savePage.Controls.Add(textBox174);
-            savePage.Controls.Add(textBox58);
-            savePage.Controls.Add(textBox341);
-            savePage.Controls.Add(textBox257);
-            savePage.Controls.Add(textBox173);
-            savePage.Controls.Add(textBox46);
-            savePage.Controls.Add(textBox340);
-            savePage.Controls.Add(textBox256);
-            savePage.Controls.Add(textBox172);
-            savePage.Controls.Add(textBox34);
-            savePage.Controls.Add(textBox339);
-            savePage.Controls.Add(textBox255);
-            savePage.Controls.Add(textBox171);
-            savePage.Controls.Add(textBox105);
-            savePage.Controls.Add(textBox338);
-            savePage.Controls.Add(textBox254);
-            savePage.Controls.Add(textBox170);
-            savePage.Controls.Add(textBox93);
-            savePage.Controls.Add(textBox337);
-            savePage.Controls.Add(textBox253);
-            savePage.Controls.Add(textBox169);
-            savePage.Controls.Add(textBox81);
-            savePage.Controls.Add(textBox336);
-            savePage.Controls.Add(textBox252);
-            savePage.Controls.Add(textBox168);
-            savePage.Controls.Add(textBox69);
-            savePage.Controls.Add(textBox335);
-            savePage.Controls.Add(textBox251);
-            savePage.Controls.Add(textBox167);
-            savePage.Controls.Add(textBox57);
-            savePage.Controls.Add(textBox334);
-            savePage.Controls.Add(textBox250);
-            savePage.Controls.Add(textBox166);
-            savePage.Controls.Add(textBox45);
-            savePage.Controls.Add(textBox333);
-            savePage.Controls.Add(textBox249);
-            savePage.Controls.Add(textBox165);
-            savePage.Controls.Add(textBox33);
+            savePage.Controls.Add(fl0);
+            savePage.Controls.Add(p30);
+            savePage.Controls.Add(p227);
+            savePage.Controls.Add(p220);
+            savePage.Controls.Add(p213);
+            savePage.Controls.Add(p26);
+            savePage.Controls.Add(p226);
+            savePage.Controls.Add(p219);
+            savePage.Controls.Add(p212);
+            savePage.Controls.Add(p25);
+            savePage.Controls.Add(p225);
+            savePage.Controls.Add(p218);
+            savePage.Controls.Add(p211);
+            savePage.Controls.Add(p24);
+            savePage.Controls.Add(p224);
+            savePage.Controls.Add(p217);
+            savePage.Controls.Add(p210);
+            savePage.Controls.Add(p23);
+            savePage.Controls.Add(p223);
+            savePage.Controls.Add(p216);
+            savePage.Controls.Add(p29);
+            savePage.Controls.Add(p22);
+            savePage.Controls.Add(p222);
+            savePage.Controls.Add(p215);
+            savePage.Controls.Add(p28);
+            savePage.Controls.Add(p21);
+            savePage.Controls.Add(p221);
+            savePage.Controls.Add(p214);
+            savePage.Controls.Add(p27);
+            savePage.Controls.Add(p20);
+            savePage.Controls.Add(p127);
+            savePage.Controls.Add(p121);
+            savePage.Controls.Add(p114);
+            savePage.Controls.Add(p17);
+            savePage.Controls.Add(p126);
+            savePage.Controls.Add(p120);
+            savePage.Controls.Add(p113);
+            savePage.Controls.Add(p15);
+            savePage.Controls.Add(p125);
+            savePage.Controls.Add(p119);
+            savePage.Controls.Add(p112);
+            savePage.Controls.Add(p14);
+            savePage.Controls.Add(p124);
+            savePage.Controls.Add(p118);
+            savePage.Controls.Add(p111);
+            savePage.Controls.Add(p13);
+            savePage.Controls.Add(p123);
+            savePage.Controls.Add(p117);
+            savePage.Controls.Add(p110);
+            savePage.Controls.Add(p12);
+            savePage.Controls.Add(p16);
+            savePage.Controls.Add(p116);
+            savePage.Controls.Add(p19);
+            savePage.Controls.Add(p11);
+            savePage.Controls.Add(p122);
+            savePage.Controls.Add(p115);
+            savePage.Controls.Add(p18);
+            savePage.Controls.Add(p10);
+            savePage.Controls.Add(np27);
+            savePage.Controls.Add(np20);
+            savePage.Controls.Add(np13);
+            savePage.Controls.Add(np6);
+            savePage.Controls.Add(np26);
+            savePage.Controls.Add(np19);
+            savePage.Controls.Add(np12);
+            savePage.Controls.Add(np5);
+            savePage.Controls.Add(np25);
+            savePage.Controls.Add(np18);
+            savePage.Controls.Add(np11);
+            savePage.Controls.Add(np4);
+            savePage.Controls.Add(np24);
+            savePage.Controls.Add(np17);
+            savePage.Controls.Add(np10);
+            savePage.Controls.Add(np3);
+            savePage.Controls.Add(np23);
+            savePage.Controls.Add(np16);
+            savePage.Controls.Add(np9);
+            savePage.Controls.Add(np2);
+            savePage.Controls.Add(np22);
+            savePage.Controls.Add(np15);
+            savePage.Controls.Add(np8);
+            savePage.Controls.Add(np1);
+            savePage.Controls.Add(np21);
+            savePage.Controls.Add(np14);
+            savePage.Controls.Add(np7);
+            savePage.Controls.Add(np0);
             savePage.Controls.Add(g627);
             savePage.Controls.Add(g620);
             savePage.Controls.Add(g613);
@@ -4027,11 +4047,13 @@
             // label164
             // 
             label164.AutoSize = true;
+            label164.Enabled = false;
             label164.Location = new Point(729, 44);
             label164.Name = "label164";
             label164.Size = new Size(70, 15);
             label164.TabIndex = 6;
             label164.Text = "Failure Type";
+            label164.Visible = false;
             label164.Click += label150_Click;
             // 
             // label163
@@ -4067,21 +4089,25 @@
             // label166
             // 
             label166.AutoSize = true;
+            label166.Enabled = false;
             label166.Location = new Point(905, 44);
             label166.Name = "label166";
             label166.Size = new Size(40, 15);
             label166.TabIndex = 6;
             label166.Text = "Sector";
+            label166.Visible = false;
             label166.Click += label150_Click;
             // 
             // label165
             // 
             label165.AutoSize = true;
+            label165.Enabled = false;
             label165.Location = new Point(867, 44);
             label165.Name = "label165";
             label165.Size = new Size(26, 15);
             label165.TabIndex = 6;
             label165.Text = "Lap";
+            label165.Visible = false;
             label165.Click += label150_Click;
             // 
             // label160
@@ -4174,6 +4200,26 @@
             label151.Text = "FW";
             label151.Click += label150_Click;
             // 
+            // numbperLabel
+            // 
+            numbperLabel.AutoSize = true;
+            numbperLabel.Location = new Point(597, 14);
+            numbperLabel.Name = "numbperLabel";
+            numbperLabel.Size = new Size(140, 15);
+            numbperLabel.TabIndex = 6;
+            numbperLabel.Text = "Lap numbers/percentage";
+            numbperLabel.Click += label150_Click;
+            // 
+            // label123
+            // 
+            label123.AutoSize = true;
+            label123.Location = new Point(348, 29);
+            label123.Name = "label123";
+            label123.Size = new Size(36, 15);
+            label123.TabIndex = 6;
+            label123.Text = "Gears";
+            label123.Click += label150_Click;
+            // 
             // label159
             // 
             label159.AutoSize = true;
@@ -4196,262 +4242,320 @@
             // 
             // comboBox28
             // 
+            comboBox28.Enabled = false;
             comboBox28.FormattingEnabled = true;
             comboBox28.Items.AddRange(new object[] { "Suspension", "Wheel", "Puncture", "Engine", "Transmission", "Leak", "Throttle/Brake", "Electrical" });
             comboBox28.Location = new Point(729, 716);
             comboBox28.Name = "comboBox28";
             comboBox28.Size = new Size(121, 23);
             comboBox28.TabIndex = 5;
+            comboBox28.Visible = false;
             // 
             // comboBox21
             // 
+            comboBox21.Enabled = false;
             comboBox21.FormattingEnabled = true;
             comboBox21.Items.AddRange(new object[] { "Suspension", "Wheel", "Puncture", "Engine", "Transmission", "Leak", "Throttle/Brake", "Electrical" });
             comboBox21.Location = new Point(729, 547);
             comboBox21.Name = "comboBox21";
             comboBox21.Size = new Size(121, 23);
             comboBox21.TabIndex = 5;
+            comboBox21.Visible = false;
             // 
             // comboBox14
             // 
+            comboBox14.Enabled = false;
             comboBox14.FormattingEnabled = true;
             comboBox14.Items.AddRange(new object[] { "Suspension", "Wheel", "Puncture", "Engine", "Transmission", "Leak", "Throttle/Brake", "Electrical" });
             comboBox14.Location = new Point(729, 379);
             comboBox14.Name = "comboBox14";
             comboBox14.Size = new Size(121, 23);
             comboBox14.TabIndex = 5;
+            comboBox14.Visible = false;
             // 
             // comboBox7
             // 
+            comboBox7.Enabled = false;
             comboBox7.FormattingEnabled = true;
             comboBox7.Items.AddRange(new object[] { "Suspension", "Wheel", "Puncture", "Engine", "Transmission", "Leak", "Throttle/Brake", "Electrical" });
             comboBox7.Location = new Point(729, 210);
             comboBox7.Name = "comboBox7";
             comboBox7.Size = new Size(121, 23);
             comboBox7.TabIndex = 5;
+            comboBox7.Visible = false;
             // 
             // comboBox27
             // 
+            comboBox27.Enabled = false;
             comboBox27.FormattingEnabled = true;
             comboBox27.Items.AddRange(new object[] { "Suspension", "Wheel", "Puncture", "Engine", "Transmission", "Leak", "Throttle/Brake", "Electrical" });
             comboBox27.Location = new Point(729, 693);
             comboBox27.Name = "comboBox27";
             comboBox27.Size = new Size(121, 23);
             comboBox27.TabIndex = 5;
+            comboBox27.Visible = false;
             // 
             // comboBox20
             // 
+            comboBox20.Enabled = false;
             comboBox20.FormattingEnabled = true;
             comboBox20.Items.AddRange(new object[] { "Suspension", "Wheel", "Puncture", "Engine", "Transmission", "Leak", "Throttle/Brake", "Electrical" });
             comboBox20.Location = new Point(729, 524);
             comboBox20.Name = "comboBox20";
             comboBox20.Size = new Size(121, 23);
             comboBox20.TabIndex = 5;
+            comboBox20.Visible = false;
             // 
             // comboBox13
             // 
+            comboBox13.Enabled = false;
             comboBox13.FormattingEnabled = true;
             comboBox13.Items.AddRange(new object[] { "Suspension", "Wheel", "Puncture", "Engine", "Transmission", "Leak", "Throttle/Brake", "Electrical" });
             comboBox13.Location = new Point(729, 356);
             comboBox13.Name = "comboBox13";
             comboBox13.Size = new Size(121, 23);
             comboBox13.TabIndex = 5;
+            comboBox13.Visible = false;
             // 
             // comboBox6
             // 
+            comboBox6.Enabled = false;
             comboBox6.FormattingEnabled = true;
             comboBox6.Items.AddRange(new object[] { "Suspension", "Wheel", "Puncture", "Engine", "Transmission", "Leak", "Throttle/Brake", "Electrical" });
             comboBox6.Location = new Point(729, 187);
             comboBox6.Name = "comboBox6";
             comboBox6.Size = new Size(121, 23);
             comboBox6.TabIndex = 5;
+            comboBox6.Visible = false;
             // 
             // comboBox26
             // 
+            comboBox26.Enabled = false;
             comboBox26.FormattingEnabled = true;
             comboBox26.Items.AddRange(new object[] { "Suspension", "Wheel", "Puncture", "Engine", "Transmission", "Leak", "Throttle/Brake", "Electrical" });
             comboBox26.Location = new Point(729, 669);
             comboBox26.Name = "comboBox26";
             comboBox26.Size = new Size(121, 23);
             comboBox26.TabIndex = 5;
+            comboBox26.Visible = false;
             // 
             // comboBox19
             // 
+            comboBox19.Enabled = false;
             comboBox19.FormattingEnabled = true;
             comboBox19.Items.AddRange(new object[] { "Suspension", "Wheel", "Puncture", "Engine", "Transmission", "Leak", "Throttle/Brake", "Electrical" });
             comboBox19.Location = new Point(729, 500);
             comboBox19.Name = "comboBox19";
             comboBox19.Size = new Size(121, 23);
             comboBox19.TabIndex = 5;
+            comboBox19.Visible = false;
             // 
             // comboBox12
             // 
+            comboBox12.Enabled = false;
             comboBox12.FormattingEnabled = true;
             comboBox12.Items.AddRange(new object[] { "Suspension", "Wheel", "Puncture", "Engine", "Transmission", "Leak", "Throttle/Brake", "Electrical" });
             comboBox12.Location = new Point(729, 332);
             comboBox12.Name = "comboBox12";
             comboBox12.Size = new Size(121, 23);
             comboBox12.TabIndex = 5;
+            comboBox12.Visible = false;
             // 
             // comboBox5
             // 
+            comboBox5.Enabled = false;
             comboBox5.FormattingEnabled = true;
             comboBox5.Items.AddRange(new object[] { "Suspension", "Wheel", "Puncture", "Engine", "Transmission", "Leak", "Throttle/Brake", "Electrical" });
             comboBox5.Location = new Point(729, 163);
             comboBox5.Name = "comboBox5";
             comboBox5.Size = new Size(121, 23);
             comboBox5.TabIndex = 5;
+            comboBox5.Visible = false;
             // 
             // comboBox25
             // 
+            comboBox25.Enabled = false;
             comboBox25.FormattingEnabled = true;
             comboBox25.Items.AddRange(new object[] { "Suspension", "Wheel", "Puncture", "Engine", "Transmission", "Leak", "Throttle/Brake", "Electrical" });
             comboBox25.Location = new Point(729, 645);
             comboBox25.Name = "comboBox25";
             comboBox25.Size = new Size(121, 23);
             comboBox25.TabIndex = 5;
+            comboBox25.Visible = false;
             // 
             // comboBox18
             // 
+            comboBox18.Enabled = false;
             comboBox18.FormattingEnabled = true;
             comboBox18.Items.AddRange(new object[] { "Suspension", "Wheel", "Puncture", "Engine", "Transmission", "Leak", "Throttle/Brake", "Electrical" });
             comboBox18.Location = new Point(729, 476);
             comboBox18.Name = "comboBox18";
             comboBox18.Size = new Size(121, 23);
             comboBox18.TabIndex = 5;
+            comboBox18.Visible = false;
             // 
             // comboBox11
             // 
+            comboBox11.Enabled = false;
             comboBox11.FormattingEnabled = true;
             comboBox11.Items.AddRange(new object[] { "Suspension", "Wheel", "Puncture", "Engine", "Transmission", "Leak", "Throttle/Brake", "Electrical" });
             comboBox11.Location = new Point(729, 308);
             comboBox11.Name = "comboBox11";
             comboBox11.Size = new Size(121, 23);
             comboBox11.TabIndex = 5;
+            comboBox11.Visible = false;
             // 
             // comboBox4
             // 
+            comboBox4.Enabled = false;
             comboBox4.FormattingEnabled = true;
             comboBox4.Items.AddRange(new object[] { "Suspension", "Wheel", "Puncture", "Engine", "Transmission", "Leak", "Throttle/Brake", "Electrical" });
             comboBox4.Location = new Point(729, 139);
             comboBox4.Name = "comboBox4";
             comboBox4.Size = new Size(121, 23);
             comboBox4.TabIndex = 5;
+            comboBox4.Visible = false;
             // 
             // comboBox24
             // 
+            comboBox24.Enabled = false;
             comboBox24.FormattingEnabled = true;
             comboBox24.Items.AddRange(new object[] { "Suspension", "Wheel", "Puncture", "Engine", "Transmission", "Leak", "Throttle/Brake", "Electrical" });
             comboBox24.Location = new Point(729, 620);
             comboBox24.Name = "comboBox24";
             comboBox24.Size = new Size(121, 23);
             comboBox24.TabIndex = 5;
+            comboBox24.Visible = false;
             // 
             // comboBox17
             // 
+            comboBox17.Enabled = false;
             comboBox17.FormattingEnabled = true;
             comboBox17.Items.AddRange(new object[] { "Suspension", "Wheel", "Puncture", "Engine", "Transmission", "Leak", "Throttle/Brake", "Electrical" });
             comboBox17.Location = new Point(729, 451);
             comboBox17.Name = "comboBox17";
             comboBox17.Size = new Size(121, 23);
             comboBox17.TabIndex = 5;
+            comboBox17.Visible = false;
             // 
             // comboBox10
             // 
+            comboBox10.Enabled = false;
             comboBox10.FormattingEnabled = true;
             comboBox10.Items.AddRange(new object[] { "Suspension", "Wheel", "Puncture", "Engine", "Transmission", "Leak", "Throttle/Brake", "Electrical" });
             comboBox10.Location = new Point(729, 283);
             comboBox10.Name = "comboBox10";
             comboBox10.Size = new Size(121, 23);
             comboBox10.TabIndex = 5;
+            comboBox10.Visible = false;
             // 
             // comboBox3
             // 
+            comboBox3.Enabled = false;
             comboBox3.FormattingEnabled = true;
             comboBox3.Items.AddRange(new object[] { "Suspension", "Wheel", "Puncture", "Engine", "Transmission", "Leak", "Throttle/Brake", "Electrical" });
             comboBox3.Location = new Point(729, 114);
             comboBox3.Name = "comboBox3";
             comboBox3.Size = new Size(121, 23);
             comboBox3.TabIndex = 5;
+            comboBox3.Visible = false;
             // 
             // comboBox23
             // 
+            comboBox23.Enabled = false;
             comboBox23.FormattingEnabled = true;
             comboBox23.Items.AddRange(new object[] { "Suspension", "Wheel", "Puncture", "Engine", "Transmission", "Leak", "Throttle/Brake", "Electrical" });
             comboBox23.Location = new Point(729, 595);
             comboBox23.Name = "comboBox23";
             comboBox23.Size = new Size(121, 23);
             comboBox23.TabIndex = 5;
+            comboBox23.Visible = false;
             // 
             // comboBox16
             // 
+            comboBox16.Enabled = false;
             comboBox16.FormattingEnabled = true;
             comboBox16.Items.AddRange(new object[] { "Suspension", "Wheel", "Puncture", "Engine", "Transmission", "Leak", "Throttle/Brake", "Electrical" });
             comboBox16.Location = new Point(729, 426);
             comboBox16.Name = "comboBox16";
             comboBox16.Size = new Size(121, 23);
             comboBox16.TabIndex = 5;
+            comboBox16.Visible = false;
             // 
             // comboBox9
             // 
+            comboBox9.Enabled = false;
             comboBox9.FormattingEnabled = true;
             comboBox9.Items.AddRange(new object[] { "Suspension", "Wheel", "Puncture", "Engine", "Transmission", "Leak", "Throttle/Brake", "Electrical" });
             comboBox9.Location = new Point(729, 258);
             comboBox9.Name = "comboBox9";
             comboBox9.Size = new Size(121, 23);
             comboBox9.TabIndex = 5;
+            comboBox9.Visible = false;
             // 
             // comboBox2
             // 
+            comboBox2.Enabled = false;
             comboBox2.FormattingEnabled = true;
             comboBox2.Items.AddRange(new object[] { "Suspension", "Wheel", "Puncture", "Engine", "Transmission", "Leak", "Throttle/Brake", "Electrical" });
             comboBox2.Location = new Point(729, 89);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(121, 23);
             comboBox2.TabIndex = 5;
+            comboBox2.Visible = false;
             // 
             // comboBox22
             // 
+            comboBox22.Enabled = false;
             comboBox22.FormattingEnabled = true;
             comboBox22.Items.AddRange(new object[] { "Suspension", "Wheel", "Puncture", "Engine", "Transmission", "Leak", "Throttle/Brake", "Electrical" });
             comboBox22.Location = new Point(729, 571);
             comboBox22.Name = "comboBox22";
             comboBox22.Size = new Size(121, 23);
             comboBox22.TabIndex = 5;
+            comboBox22.Visible = false;
             // 
             // comboBox15
             // 
+            comboBox15.Enabled = false;
             comboBox15.FormattingEnabled = true;
             comboBox15.Items.AddRange(new object[] { "Suspension", "Wheel", "Puncture", "Engine", "Transmission", "Leak", "Throttle/Brake", "Electrical" });
             comboBox15.Location = new Point(729, 402);
             comboBox15.Name = "comboBox15";
             comboBox15.Size = new Size(121, 23);
             comboBox15.TabIndex = 5;
+            comboBox15.Visible = false;
             // 
             // comboBox8
             // 
+            comboBox8.Enabled = false;
             comboBox8.FormattingEnabled = true;
             comboBox8.Items.AddRange(new object[] { "Suspension", "Wheel", "Puncture", "Engine", "Transmission", "Leak", "Throttle/Brake", "Electrical" });
             comboBox8.Location = new Point(729, 234);
             comboBox8.Name = "comboBox8";
             comboBox8.Size = new Size(121, 23);
             comboBox8.TabIndex = 5;
+            comboBox8.Visible = false;
             // 
             // comboBox1
             // 
+            comboBox1.Enabled = false;
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "Suspension", "Wheel", "Puncture", "Engine", "Transmission", "Leak", "Throttle/Brake", "Electrical" });
             comboBox1.Location = new Point(729, 65);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(121, 23);
             comboBox1.TabIndex = 5;
+            comboBox1.Visible = false;
             // 
             // textBox438
             // 
+            textBox438.Enabled = false;
             textBox438.Location = new Point(905, 719);
             textBox438.Name = "textBox438";
             textBox438.Size = new Size(32, 23);
             textBox438.TabIndex = 4;
+            textBox438.Visible = false;
             // 
             // tt27
             // 
@@ -4462,10 +4566,12 @@
             // 
             // textBox382
             // 
+            textBox382.Enabled = false;
             textBox382.Location = new Point(867, 719);
             textBox382.Name = "textBox382";
             textBox382.Size = new Size(32, 23);
             textBox382.TabIndex = 4;
+            textBox382.Visible = false;
             // 
             // textBox360
             // 
@@ -4476,10 +4582,12 @@
             // 
             // textBox437
             // 
+            textBox437.Enabled = false;
             textBox437.Location = new Point(905, 550);
             textBox437.Name = "textBox437";
             textBox437.Size = new Size(32, 23);
             textBox437.TabIndex = 4;
+            textBox437.Visible = false;
             // 
             // tt20
             // 
@@ -4490,10 +4598,12 @@
             // 
             // textBox381
             // 
+            textBox381.Enabled = false;
             textBox381.Location = new Point(867, 550);
             textBox381.Name = "textBox381";
             textBox381.Size = new Size(32, 23);
             textBox381.TabIndex = 4;
+            textBox381.Visible = false;
             // 
             // textBox276
             // 
@@ -4504,10 +4614,12 @@
             // 
             // textBox436
             // 
+            textBox436.Enabled = false;
             textBox436.Location = new Point(905, 382);
             textBox436.Name = "textBox436";
             textBox436.Size = new Size(32, 23);
             textBox436.TabIndex = 4;
+            textBox436.Visible = false;
             // 
             // tt13
             // 
@@ -4518,10 +4630,12 @@
             // 
             // textBox380
             // 
+            textBox380.Enabled = false;
             textBox380.Location = new Point(867, 382);
             textBox380.Name = "textBox380";
             textBox380.Size = new Size(32, 23);
             textBox380.TabIndex = 4;
+            textBox380.Visible = false;
             // 
             // textBox192
             // 
@@ -4532,10 +4646,12 @@
             // 
             // textBox435
             // 
+            textBox435.Enabled = false;
             textBox435.Location = new Point(905, 213);
             textBox435.Name = "textBox435";
             textBox435.Size = new Size(32, 23);
             textBox435.TabIndex = 4;
+            textBox435.Visible = false;
             // 
             // tt6
             // 
@@ -4546,10 +4662,12 @@
             // 
             // textBox379
             // 
+            textBox379.Enabled = false;
             textBox379.Location = new Point(867, 213);
             textBox379.Name = "textBox379";
             textBox379.Size = new Size(32, 23);
             textBox379.TabIndex = 4;
+            textBox379.Visible = false;
             // 
             // textBox108
             // 
@@ -4560,10 +4678,12 @@
             // 
             // textBox434
             // 
+            textBox434.Enabled = false;
             textBox434.Location = new Point(905, 696);
             textBox434.Name = "textBox434";
             textBox434.Size = new Size(32, 23);
             textBox434.TabIndex = 4;
+            textBox434.Visible = false;
             // 
             // tt26
             // 
@@ -4574,10 +4694,12 @@
             // 
             // textBox378
             // 
+            textBox378.Enabled = false;
             textBox378.Location = new Point(867, 696);
             textBox378.Name = "textBox378";
             textBox378.Size = new Size(32, 23);
             textBox378.TabIndex = 4;
+            textBox378.Visible = false;
             // 
             // textBox359
             // 
@@ -4588,10 +4710,12 @@
             // 
             // textBox433
             // 
+            textBox433.Enabled = false;
             textBox433.Location = new Point(905, 527);
             textBox433.Name = "textBox433";
             textBox433.Size = new Size(32, 23);
             textBox433.TabIndex = 4;
+            textBox433.Visible = false;
             // 
             // tt19
             // 
@@ -4602,10 +4726,12 @@
             // 
             // textBox377
             // 
+            textBox377.Enabled = false;
             textBox377.Location = new Point(867, 527);
             textBox377.Name = "textBox377";
             textBox377.Size = new Size(32, 23);
             textBox377.TabIndex = 4;
+            textBox377.Visible = false;
             // 
             // textBox275
             // 
@@ -4616,10 +4742,12 @@
             // 
             // textBox432
             // 
+            textBox432.Enabled = false;
             textBox432.Location = new Point(905, 359);
             textBox432.Name = "textBox432";
             textBox432.Size = new Size(32, 23);
             textBox432.TabIndex = 4;
+            textBox432.Visible = false;
             // 
             // tt12
             // 
@@ -4630,10 +4758,12 @@
             // 
             // textBox376
             // 
+            textBox376.Enabled = false;
             textBox376.Location = new Point(867, 359);
             textBox376.Name = "textBox376";
             textBox376.Size = new Size(32, 23);
             textBox376.TabIndex = 4;
+            textBox376.Visible = false;
             // 
             // textBox191
             // 
@@ -4644,10 +4774,12 @@
             // 
             // textBox431
             // 
+            textBox431.Enabled = false;
             textBox431.Location = new Point(905, 190);
             textBox431.Name = "textBox431";
             textBox431.Size = new Size(32, 23);
             textBox431.TabIndex = 4;
+            textBox431.Visible = false;
             // 
             // tt5
             // 
@@ -4658,10 +4790,12 @@
             // 
             // textBox375
             // 
+            textBox375.Enabled = false;
             textBox375.Location = new Point(867, 190);
             textBox375.Name = "textBox375";
             textBox375.Size = new Size(32, 23);
             textBox375.TabIndex = 4;
+            textBox375.Visible = false;
             // 
             // textBox96
             // 
@@ -4672,10 +4806,12 @@
             // 
             // textBox430
             // 
+            textBox430.Enabled = false;
             textBox430.Location = new Point(905, 672);
             textBox430.Name = "textBox430";
             textBox430.Size = new Size(32, 23);
             textBox430.TabIndex = 4;
+            textBox430.Visible = false;
             // 
             // tt25
             // 
@@ -4686,10 +4822,12 @@
             // 
             // textBox374
             // 
+            textBox374.Enabled = false;
             textBox374.Location = new Point(867, 672);
             textBox374.Name = "textBox374";
             textBox374.Size = new Size(32, 23);
             textBox374.TabIndex = 4;
+            textBox374.Visible = false;
             // 
             // textBox358
             // 
@@ -4700,10 +4838,12 @@
             // 
             // textBox429
             // 
+            textBox429.Enabled = false;
             textBox429.Location = new Point(905, 503);
             textBox429.Name = "textBox429";
             textBox429.Size = new Size(32, 23);
             textBox429.TabIndex = 4;
+            textBox429.Visible = false;
             // 
             // tt18
             // 
@@ -4714,10 +4854,12 @@
             // 
             // textBox373
             // 
+            textBox373.Enabled = false;
             textBox373.Location = new Point(867, 503);
             textBox373.Name = "textBox373";
             textBox373.Size = new Size(32, 23);
             textBox373.TabIndex = 4;
+            textBox373.Visible = false;
             // 
             // textBox274
             // 
@@ -4728,10 +4870,12 @@
             // 
             // textBox428
             // 
+            textBox428.Enabled = false;
             textBox428.Location = new Point(905, 335);
             textBox428.Name = "textBox428";
             textBox428.Size = new Size(32, 23);
             textBox428.TabIndex = 4;
+            textBox428.Visible = false;
             // 
             // tt11
             // 
@@ -4742,10 +4886,12 @@
             // 
             // textBox372
             // 
+            textBox372.Enabled = false;
             textBox372.Location = new Point(867, 335);
             textBox372.Name = "textBox372";
             textBox372.Size = new Size(32, 23);
             textBox372.TabIndex = 4;
+            textBox372.Visible = false;
             // 
             // textBox190
             // 
@@ -4756,10 +4902,12 @@
             // 
             // textBox427
             // 
+            textBox427.Enabled = false;
             textBox427.Location = new Point(905, 166);
             textBox427.Name = "textBox427";
             textBox427.Size = new Size(32, 23);
             textBox427.TabIndex = 4;
+            textBox427.Visible = false;
             // 
             // tt4
             // 
@@ -4770,10 +4918,12 @@
             // 
             // textBox371
             // 
+            textBox371.Enabled = false;
             textBox371.Location = new Point(867, 166);
             textBox371.Name = "textBox371";
             textBox371.Size = new Size(32, 23);
             textBox371.TabIndex = 4;
+            textBox371.Visible = false;
             // 
             // textBox84
             // 
@@ -4784,10 +4934,12 @@
             // 
             // textBox426
             // 
+            textBox426.Enabled = false;
             textBox426.Location = new Point(905, 648);
             textBox426.Name = "textBox426";
             textBox426.Size = new Size(32, 23);
             textBox426.TabIndex = 4;
+            textBox426.Visible = false;
             // 
             // tt24
             // 
@@ -4798,10 +4950,12 @@
             // 
             // textBox370
             // 
+            textBox370.Enabled = false;
             textBox370.Location = new Point(867, 648);
             textBox370.Name = "textBox370";
             textBox370.Size = new Size(32, 23);
             textBox370.TabIndex = 4;
+            textBox370.Visible = false;
             // 
             // textBox357
             // 
@@ -4812,10 +4966,12 @@
             // 
             // textBox425
             // 
+            textBox425.Enabled = false;
             textBox425.Location = new Point(905, 479);
             textBox425.Name = "textBox425";
             textBox425.Size = new Size(32, 23);
             textBox425.TabIndex = 4;
+            textBox425.Visible = false;
             // 
             // tt17
             // 
@@ -4826,10 +4982,12 @@
             // 
             // textBox369
             // 
+            textBox369.Enabled = false;
             textBox369.Location = new Point(867, 479);
             textBox369.Name = "textBox369";
             textBox369.Size = new Size(32, 23);
             textBox369.TabIndex = 4;
+            textBox369.Visible = false;
             // 
             // textBox273
             // 
@@ -4840,10 +4998,12 @@
             // 
             // textBox424
             // 
+            textBox424.Enabled = false;
             textBox424.Location = new Point(905, 311);
             textBox424.Name = "textBox424";
             textBox424.Size = new Size(32, 23);
             textBox424.TabIndex = 4;
+            textBox424.Visible = false;
             // 
             // tt10
             // 
@@ -4854,10 +5014,12 @@
             // 
             // textBox368
             // 
+            textBox368.Enabled = false;
             textBox368.Location = new Point(867, 311);
             textBox368.Name = "textBox368";
             textBox368.Size = new Size(32, 23);
             textBox368.TabIndex = 4;
+            textBox368.Visible = false;
             // 
             // textBox189
             // 
@@ -4868,10 +5030,12 @@
             // 
             // textBox423
             // 
+            textBox423.Enabled = false;
             textBox423.Location = new Point(905, 142);
             textBox423.Name = "textBox423";
             textBox423.Size = new Size(32, 23);
             textBox423.TabIndex = 4;
+            textBox423.Visible = false;
             // 
             // tt3
             // 
@@ -4882,10 +5046,12 @@
             // 
             // textBox367
             // 
+            textBox367.Enabled = false;
             textBox367.Location = new Point(867, 142);
             textBox367.Name = "textBox367";
             textBox367.Size = new Size(32, 23);
             textBox367.TabIndex = 4;
+            textBox367.Visible = false;
             // 
             // textBox72
             // 
@@ -4896,10 +5062,12 @@
             // 
             // textBox422
             // 
+            textBox422.Enabled = false;
             textBox422.Location = new Point(905, 623);
             textBox422.Name = "textBox422";
             textBox422.Size = new Size(32, 23);
             textBox422.TabIndex = 4;
+            textBox422.Visible = false;
             // 
             // tt23
             // 
@@ -4910,10 +5078,12 @@
             // 
             // textBox366
             // 
+            textBox366.Enabled = false;
             textBox366.Location = new Point(867, 623);
             textBox366.Name = "textBox366";
             textBox366.Size = new Size(32, 23);
             textBox366.TabIndex = 4;
+            textBox366.Visible = false;
             // 
             // textBox356
             // 
@@ -4924,10 +5094,12 @@
             // 
             // textBox421
             // 
+            textBox421.Enabled = false;
             textBox421.Location = new Point(905, 454);
             textBox421.Name = "textBox421";
             textBox421.Size = new Size(32, 23);
             textBox421.TabIndex = 4;
+            textBox421.Visible = false;
             // 
             // tt16
             // 
@@ -4938,10 +5110,12 @@
             // 
             // textBox365
             // 
+            textBox365.Enabled = false;
             textBox365.Location = new Point(867, 454);
             textBox365.Name = "textBox365";
             textBox365.Size = new Size(32, 23);
             textBox365.TabIndex = 4;
+            textBox365.Visible = false;
             // 
             // textBox272
             // 
@@ -4952,10 +5126,12 @@
             // 
             // textBox420
             // 
+            textBox420.Enabled = false;
             textBox420.Location = new Point(905, 286);
             textBox420.Name = "textBox420";
             textBox420.Size = new Size(32, 23);
             textBox420.TabIndex = 4;
+            textBox420.Visible = false;
             // 
             // tt9
             // 
@@ -4966,10 +5142,12 @@
             // 
             // textBox364
             // 
+            textBox364.Enabled = false;
             textBox364.Location = new Point(867, 286);
             textBox364.Name = "textBox364";
             textBox364.Size = new Size(32, 23);
             textBox364.TabIndex = 4;
+            textBox364.Visible = false;
             // 
             // textBox188
             // 
@@ -4980,10 +5158,12 @@
             // 
             // textBox419
             // 
+            textBox419.Enabled = false;
             textBox419.Location = new Point(905, 117);
             textBox419.Name = "textBox419";
             textBox419.Size = new Size(32, 23);
             textBox419.TabIndex = 4;
+            textBox419.Visible = false;
             // 
             // tt2
             // 
@@ -4994,10 +5174,12 @@
             // 
             // textBox363
             // 
+            textBox363.Enabled = false;
             textBox363.Location = new Point(867, 117);
             textBox363.Name = "textBox363";
             textBox363.Size = new Size(32, 23);
             textBox363.TabIndex = 4;
+            textBox363.Visible = false;
             // 
             // textBox60
             // 
@@ -5008,10 +5190,12 @@
             // 
             // textBox418
             // 
+            textBox418.Enabled = false;
             textBox418.Location = new Point(905, 598);
             textBox418.Name = "textBox418";
             textBox418.Size = new Size(32, 23);
             textBox418.TabIndex = 4;
+            textBox418.Visible = false;
             // 
             // tt22
             // 
@@ -5022,10 +5206,12 @@
             // 
             // textBox362
             // 
+            textBox362.Enabled = false;
             textBox362.Location = new Point(867, 598);
             textBox362.Name = "textBox362";
             textBox362.Size = new Size(32, 23);
             textBox362.TabIndex = 4;
+            textBox362.Visible = false;
             // 
             // textBox355
             // 
@@ -5036,10 +5222,12 @@
             // 
             // textBox417
             // 
+            textBox417.Enabled = false;
             textBox417.Location = new Point(905, 429);
             textBox417.Name = "textBox417";
             textBox417.Size = new Size(32, 23);
             textBox417.TabIndex = 4;
+            textBox417.Visible = false;
             // 
             // tt15
             // 
@@ -5050,10 +5238,12 @@
             // 
             // textBox361
             // 
+            textBox361.Enabled = false;
             textBox361.Location = new Point(867, 429);
             textBox361.Name = "textBox361";
             textBox361.Size = new Size(32, 23);
             textBox361.TabIndex = 4;
+            textBox361.Visible = false;
             // 
             // textBox271
             // 
@@ -5064,10 +5254,12 @@
             // 
             // textBox416
             // 
+            textBox416.Enabled = false;
             textBox416.Location = new Point(905, 261);
             textBox416.Name = "textBox416";
             textBox416.Size = new Size(32, 23);
             textBox416.TabIndex = 4;
+            textBox416.Visible = false;
             // 
             // tt8
             // 
@@ -5078,10 +5270,12 @@
             // 
             // textBox85
             // 
+            textBox85.Enabled = false;
             textBox85.Location = new Point(867, 261);
             textBox85.Name = "textBox85";
             textBox85.Size = new Size(32, 23);
             textBox85.TabIndex = 4;
+            textBox85.Visible = false;
             // 
             // textBox187
             // 
@@ -5092,10 +5286,12 @@
             // 
             // textBox415
             // 
+            textBox415.Enabled = false;
             textBox415.Location = new Point(905, 92);
             textBox415.Name = "textBox415";
             textBox415.Size = new Size(32, 23);
             textBox415.TabIndex = 4;
+            textBox415.Visible = false;
             // 
             // tt1
             // 
@@ -5106,10 +5302,12 @@
             // 
             // textBox73
             // 
+            textBox73.Enabled = false;
             textBox73.Location = new Point(867, 92);
             textBox73.Name = "textBox73";
             textBox73.Size = new Size(32, 23);
             textBox73.TabIndex = 4;
+            textBox73.Visible = false;
             // 
             // textBox48
             // 
@@ -5120,10 +5318,12 @@
             // 
             // textBox414
             // 
+            textBox414.Enabled = false;
             textBox414.Location = new Point(905, 574);
             textBox414.Name = "textBox414";
             textBox414.Size = new Size(32, 23);
             textBox414.TabIndex = 4;
+            textBox414.Visible = false;
             // 
             // tt21
             // 
@@ -5134,10 +5334,12 @@
             // 
             // textBox61
             // 
+            textBox61.Enabled = false;
             textBox61.Location = new Point(867, 574);
             textBox61.Name = "textBox61";
             textBox61.Size = new Size(32, 23);
             textBox61.TabIndex = 4;
+            textBox61.Visible = false;
             // 
             // textBox354
             // 
@@ -5148,10 +5350,12 @@
             // 
             // textBox413
             // 
+            textBox413.Enabled = false;
             textBox413.Location = new Point(905, 405);
             textBox413.Name = "textBox413";
             textBox413.Size = new Size(32, 23);
             textBox413.TabIndex = 4;
+            textBox413.Visible = false;
             // 
             // tt14
             // 
@@ -5162,10 +5366,12 @@
             // 
             // textBox49
             // 
+            textBox49.Enabled = false;
             textBox49.Location = new Point(867, 405);
             textBox49.Name = "textBox49";
             textBox49.Size = new Size(32, 23);
             textBox49.TabIndex = 4;
+            textBox49.Visible = false;
             // 
             // textBox270
             // 
@@ -5176,10 +5382,12 @@
             // 
             // textBox412
             // 
+            textBox412.Enabled = false;
             textBox412.Location = new Point(905, 237);
             textBox412.Name = "textBox412";
             textBox412.Size = new Size(32, 23);
             textBox412.TabIndex = 4;
+            textBox412.Visible = false;
             // 
             // tt7
             // 
@@ -5190,10 +5398,12 @@
             // 
             // textBox37
             // 
+            textBox37.Enabled = false;
             textBox37.Location = new Point(867, 237);
             textBox37.Name = "textBox37";
             textBox37.Size = new Size(32, 23);
             textBox37.TabIndex = 4;
+            textBox37.Visible = false;
             // 
             // textBox186
             // 
@@ -5202,12 +5412,14 @@
             textBox186.Size = new Size(32, 23);
             textBox186.TabIndex = 4;
             // 
-            // textBox411
+            // fs0
             // 
-            textBox411.Location = new Point(905, 68);
-            textBox411.Name = "textBox411";
-            textBox411.Size = new Size(32, 23);
-            textBox411.TabIndex = 4;
+            fs0.Enabled = false;
+            fs0.Location = new Point(905, 68);
+            fs0.Name = "fs0";
+            fs0.Size = new Size(32, 23);
+            fs0.TabIndex = 4;
+            fs0.Visible = false;
             // 
             // tt0
             // 
@@ -5216,607 +5428,609 @@
             tt0.Size = new Size(32, 23);
             tt0.TabIndex = 4;
             // 
-            // textBox25
+            // fl0
             // 
-            textBox25.Location = new Point(867, 68);
-            textBox25.Name = "textBox25";
-            textBox25.Size = new Size(32, 23);
-            textBox25.TabIndex = 4;
+            fl0.Enabled = false;
+            fl0.Location = new Point(867, 68);
+            fl0.Name = "fl0";
+            fl0.Size = new Size(32, 23);
+            fl0.TabIndex = 4;
+            fl0.Visible = false;
             // 
-            // textBox36
+            // p30
             // 
-            textBox36.Location = new Point(674, 65);
-            textBox36.Name = "textBox36";
-            textBox36.Size = new Size(32, 23);
-            textBox36.TabIndex = 4;
+            p30.Location = new Point(674, 65);
+            p30.Name = "p30";
+            p30.Size = new Size(32, 23);
+            p30.TabIndex = 4;
             // 
-            // textBox353
+            // p227
             // 
-            textBox353.Location = new Point(636, 716);
-            textBox353.Name = "textBox353";
-            textBox353.Size = new Size(32, 23);
-            textBox353.TabIndex = 4;
+            p227.Location = new Point(636, 716);
+            p227.Name = "p227";
+            p227.Size = new Size(32, 23);
+            p227.TabIndex = 4;
             // 
-            // textBox269
+            // p220
             // 
-            textBox269.Location = new Point(636, 547);
-            textBox269.Name = "textBox269";
-            textBox269.Size = new Size(32, 23);
-            textBox269.TabIndex = 4;
+            p220.Location = new Point(636, 547);
+            p220.Name = "p220";
+            p220.Size = new Size(32, 23);
+            p220.TabIndex = 4;
             // 
-            // textBox185
+            // p213
             // 
-            textBox185.Location = new Point(636, 379);
-            textBox185.Name = "textBox185";
-            textBox185.Size = new Size(32, 23);
-            textBox185.TabIndex = 4;
+            p213.Location = new Point(636, 379);
+            p213.Name = "p213";
+            p213.Size = new Size(32, 23);
+            p213.TabIndex = 4;
             // 
-            // textBox107
+            // p26
             // 
-            textBox107.Location = new Point(636, 210);
-            textBox107.Name = "textBox107";
-            textBox107.Size = new Size(32, 23);
-            textBox107.TabIndex = 4;
+            p26.Location = new Point(636, 210);
+            p26.Name = "p26";
+            p26.Size = new Size(32, 23);
+            p26.TabIndex = 4;
             // 
-            // textBox352
+            // p226
             // 
-            textBox352.Location = new Point(636, 693);
-            textBox352.Name = "textBox352";
-            textBox352.Size = new Size(32, 23);
-            textBox352.TabIndex = 4;
+            p226.Location = new Point(636, 693);
+            p226.Name = "p226";
+            p226.Size = new Size(32, 23);
+            p226.TabIndex = 4;
             // 
-            // textBox268
+            // p219
             // 
-            textBox268.Location = new Point(636, 524);
-            textBox268.Name = "textBox268";
-            textBox268.Size = new Size(32, 23);
-            textBox268.TabIndex = 4;
+            p219.Location = new Point(636, 524);
+            p219.Name = "p219";
+            p219.Size = new Size(32, 23);
+            p219.TabIndex = 4;
             // 
-            // textBox184
+            // p212
             // 
-            textBox184.Location = new Point(636, 356);
-            textBox184.Name = "textBox184";
-            textBox184.Size = new Size(32, 23);
-            textBox184.TabIndex = 4;
+            p212.Location = new Point(636, 356);
+            p212.Name = "p212";
+            p212.Size = new Size(32, 23);
+            p212.TabIndex = 4;
             // 
-            // textBox95
+            // p25
             // 
-            textBox95.Location = new Point(636, 187);
-            textBox95.Name = "textBox95";
-            textBox95.Size = new Size(32, 23);
-            textBox95.TabIndex = 4;
+            p25.Location = new Point(636, 187);
+            p25.Name = "p25";
+            p25.Size = new Size(32, 23);
+            p25.TabIndex = 4;
             // 
-            // textBox351
+            // p225
             // 
-            textBox351.Location = new Point(636, 669);
-            textBox351.Name = "textBox351";
-            textBox351.Size = new Size(32, 23);
-            textBox351.TabIndex = 4;
+            p225.Location = new Point(636, 669);
+            p225.Name = "p225";
+            p225.Size = new Size(32, 23);
+            p225.TabIndex = 4;
             // 
-            // textBox267
+            // p218
             // 
-            textBox267.Location = new Point(636, 500);
-            textBox267.Name = "textBox267";
-            textBox267.Size = new Size(32, 23);
-            textBox267.TabIndex = 4;
+            p218.Location = new Point(636, 500);
+            p218.Name = "p218";
+            p218.Size = new Size(32, 23);
+            p218.TabIndex = 4;
             // 
-            // textBox183
+            // p211
             // 
-            textBox183.Location = new Point(636, 332);
-            textBox183.Name = "textBox183";
-            textBox183.Size = new Size(32, 23);
-            textBox183.TabIndex = 4;
+            p211.Location = new Point(636, 332);
+            p211.Name = "p211";
+            p211.Size = new Size(32, 23);
+            p211.TabIndex = 4;
             // 
-            // textBox83
+            // p24
             // 
-            textBox83.Location = new Point(636, 163);
-            textBox83.Name = "textBox83";
-            textBox83.Size = new Size(32, 23);
-            textBox83.TabIndex = 4;
+            p24.Location = new Point(636, 163);
+            p24.Name = "p24";
+            p24.Size = new Size(32, 23);
+            p24.TabIndex = 4;
             // 
-            // textBox350
+            // p224
             // 
-            textBox350.Location = new Point(636, 645);
-            textBox350.Name = "textBox350";
-            textBox350.Size = new Size(32, 23);
-            textBox350.TabIndex = 4;
+            p224.Location = new Point(636, 645);
+            p224.Name = "p224";
+            p224.Size = new Size(32, 23);
+            p224.TabIndex = 4;
             // 
-            // textBox266
+            // p217
             // 
-            textBox266.Location = new Point(636, 476);
-            textBox266.Name = "textBox266";
-            textBox266.Size = new Size(32, 23);
-            textBox266.TabIndex = 4;
+            p217.Location = new Point(636, 476);
+            p217.Name = "p217";
+            p217.Size = new Size(32, 23);
+            p217.TabIndex = 4;
             // 
-            // textBox182
+            // p210
             // 
-            textBox182.Location = new Point(636, 308);
-            textBox182.Name = "textBox182";
-            textBox182.Size = new Size(32, 23);
-            textBox182.TabIndex = 4;
+            p210.Location = new Point(636, 308);
+            p210.Name = "p210";
+            p210.Size = new Size(32, 23);
+            p210.TabIndex = 4;
             // 
-            // textBox71
+            // p23
             // 
-            textBox71.Location = new Point(636, 139);
-            textBox71.Name = "textBox71";
-            textBox71.Size = new Size(32, 23);
-            textBox71.TabIndex = 4;
+            p23.Location = new Point(636, 139);
+            p23.Name = "p23";
+            p23.Size = new Size(32, 23);
+            p23.TabIndex = 4;
             // 
-            // textBox349
+            // p223
             // 
-            textBox349.Location = new Point(636, 620);
-            textBox349.Name = "textBox349";
-            textBox349.Size = new Size(32, 23);
-            textBox349.TabIndex = 4;
+            p223.Location = new Point(636, 620);
+            p223.Name = "p223";
+            p223.Size = new Size(32, 23);
+            p223.TabIndex = 4;
             // 
-            // textBox265
+            // p216
             // 
-            textBox265.Location = new Point(636, 451);
-            textBox265.Name = "textBox265";
-            textBox265.Size = new Size(32, 23);
-            textBox265.TabIndex = 4;
+            p216.Location = new Point(636, 451);
+            p216.Name = "p216";
+            p216.Size = new Size(32, 23);
+            p216.TabIndex = 4;
             // 
-            // textBox181
+            // p29
             // 
-            textBox181.Location = new Point(636, 283);
-            textBox181.Name = "textBox181";
-            textBox181.Size = new Size(32, 23);
-            textBox181.TabIndex = 4;
+            p29.Location = new Point(636, 283);
+            p29.Name = "p29";
+            p29.Size = new Size(32, 23);
+            p29.TabIndex = 4;
             // 
-            // textBox59
+            // p22
             // 
-            textBox59.Location = new Point(636, 114);
-            textBox59.Name = "textBox59";
-            textBox59.Size = new Size(32, 23);
-            textBox59.TabIndex = 4;
+            p22.Location = new Point(636, 114);
+            p22.Name = "p22";
+            p22.Size = new Size(32, 23);
+            p22.TabIndex = 4;
             // 
-            // textBox348
+            // p222
             // 
-            textBox348.Location = new Point(636, 595);
-            textBox348.Name = "textBox348";
-            textBox348.Size = new Size(32, 23);
-            textBox348.TabIndex = 4;
+            p222.Location = new Point(636, 595);
+            p222.Name = "p222";
+            p222.Size = new Size(32, 23);
+            p222.TabIndex = 4;
             // 
-            // textBox264
+            // p215
             // 
-            textBox264.Location = new Point(636, 426);
-            textBox264.Name = "textBox264";
-            textBox264.Size = new Size(32, 23);
-            textBox264.TabIndex = 4;
+            p215.Location = new Point(636, 426);
+            p215.Name = "p215";
+            p215.Size = new Size(32, 23);
+            p215.TabIndex = 4;
             // 
-            // textBox180
+            // p28
             // 
-            textBox180.Location = new Point(636, 258);
-            textBox180.Name = "textBox180";
-            textBox180.Size = new Size(32, 23);
-            textBox180.TabIndex = 4;
+            p28.Location = new Point(636, 258);
+            p28.Name = "p28";
+            p28.Size = new Size(32, 23);
+            p28.TabIndex = 4;
             // 
-            // textBox47
+            // p21
             // 
-            textBox47.Location = new Point(636, 89);
-            textBox47.Name = "textBox47";
-            textBox47.Size = new Size(32, 23);
-            textBox47.TabIndex = 4;
+            p21.Location = new Point(636, 89);
+            p21.Name = "p21";
+            p21.Size = new Size(32, 23);
+            p21.TabIndex = 4;
             // 
-            // textBox347
+            // p221
             // 
-            textBox347.Location = new Point(636, 571);
-            textBox347.Name = "textBox347";
-            textBox347.Size = new Size(32, 23);
-            textBox347.TabIndex = 4;
+            p221.Location = new Point(636, 571);
+            p221.Name = "p221";
+            p221.Size = new Size(32, 23);
+            p221.TabIndex = 4;
             // 
-            // textBox263
+            // p214
             // 
-            textBox263.Location = new Point(636, 402);
-            textBox263.Name = "textBox263";
-            textBox263.Size = new Size(32, 23);
-            textBox263.TabIndex = 4;
+            p214.Location = new Point(636, 402);
+            p214.Name = "p214";
+            p214.Size = new Size(32, 23);
+            p214.TabIndex = 4;
             // 
-            // textBox179
+            // p27
             // 
-            textBox179.Location = new Point(636, 234);
-            textBox179.Name = "textBox179";
-            textBox179.Size = new Size(32, 23);
-            textBox179.TabIndex = 4;
+            p27.Location = new Point(636, 234);
+            p27.Name = "p27";
+            p27.Size = new Size(32, 23);
+            p27.TabIndex = 4;
             // 
-            // textBox35
+            // p20
             // 
-            textBox35.Location = new Point(636, 65);
-            textBox35.Name = "textBox35";
-            textBox35.Size = new Size(32, 23);
-            textBox35.TabIndex = 4;
+            p20.Location = new Point(636, 65);
+            p20.Name = "p20";
+            p20.Size = new Size(32, 23);
+            p20.TabIndex = 4;
             // 
-            // textBox346
+            // p127
             // 
-            textBox346.Location = new Point(598, 716);
-            textBox346.Name = "textBox346";
-            textBox346.Size = new Size(32, 23);
-            textBox346.TabIndex = 4;
+            p127.Location = new Point(598, 716);
+            p127.Name = "p127";
+            p127.Size = new Size(32, 23);
+            p127.TabIndex = 4;
             // 
-            // textBox262
+            // p121
             // 
-            textBox262.Location = new Point(598, 547);
-            textBox262.Name = "textBox262";
-            textBox262.Size = new Size(32, 23);
-            textBox262.TabIndex = 4;
+            p121.Location = new Point(598, 571);
+            p121.Name = "p121";
+            p121.Size = new Size(32, 23);
+            p121.TabIndex = 4;
             // 
-            // textBox178
+            // p114
             // 
-            textBox178.Location = new Point(598, 379);
-            textBox178.Name = "textBox178";
-            textBox178.Size = new Size(32, 23);
-            textBox178.TabIndex = 4;
+            p114.Location = new Point(598, 403);
+            p114.Name = "p114";
+            p114.Size = new Size(32, 23);
+            p114.TabIndex = 4;
             // 
-            // textBox106
+            // p17
             // 
-            textBox106.Location = new Point(598, 210);
-            textBox106.Name = "textBox106";
-            textBox106.Size = new Size(32, 23);
-            textBox106.TabIndex = 4;
+            p17.Location = new Point(598, 234);
+            p17.Name = "p17";
+            p17.Size = new Size(32, 23);
+            p17.TabIndex = 4;
             // 
-            // textBox345
+            // p126
             // 
-            textBox345.Location = new Point(598, 693);
-            textBox345.Name = "textBox345";
-            textBox345.Size = new Size(32, 23);
-            textBox345.TabIndex = 4;
+            p126.Location = new Point(598, 693);
+            p126.Name = "p126";
+            p126.Size = new Size(32, 23);
+            p126.TabIndex = 4;
             // 
-            // textBox261
+            // p120
             // 
-            textBox261.Location = new Point(598, 524);
-            textBox261.Name = "textBox261";
-            textBox261.Size = new Size(32, 23);
-            textBox261.TabIndex = 4;
+            p120.Location = new Point(598, 548);
+            p120.Name = "p120";
+            p120.Size = new Size(32, 23);
+            p120.TabIndex = 4;
             // 
-            // textBox177
+            // p113
             // 
-            textBox177.Location = new Point(598, 356);
-            textBox177.Name = "textBox177";
-            textBox177.Size = new Size(32, 23);
-            textBox177.TabIndex = 4;
+            p113.Location = new Point(598, 380);
+            p113.Name = "p113";
+            p113.Size = new Size(32, 23);
+            p113.TabIndex = 4;
             // 
-            // textBox94
+            // p15
             // 
-            textBox94.Location = new Point(598, 187);
-            textBox94.Name = "textBox94";
-            textBox94.Size = new Size(32, 23);
-            textBox94.TabIndex = 4;
+            p15.Location = new Point(598, 187);
+            p15.Name = "p15";
+            p15.Size = new Size(32, 23);
+            p15.TabIndex = 4;
             // 
-            // textBox344
+            // p125
             // 
-            textBox344.Location = new Point(598, 669);
-            textBox344.Name = "textBox344";
-            textBox344.Size = new Size(32, 23);
-            textBox344.TabIndex = 4;
+            p125.Location = new Point(598, 669);
+            p125.Name = "p125";
+            p125.Size = new Size(32, 23);
+            p125.TabIndex = 4;
             // 
-            // textBox260
+            // p119
             // 
-            textBox260.Location = new Point(598, 500);
-            textBox260.Name = "textBox260";
-            textBox260.Size = new Size(32, 23);
-            textBox260.TabIndex = 4;
+            p119.Location = new Point(598, 524);
+            p119.Name = "p119";
+            p119.Size = new Size(32, 23);
+            p119.TabIndex = 4;
             // 
-            // textBox176
+            // p112
             // 
-            textBox176.Location = new Point(598, 332);
-            textBox176.Name = "textBox176";
-            textBox176.Size = new Size(32, 23);
-            textBox176.TabIndex = 4;
+            p112.Location = new Point(598, 356);
+            p112.Name = "p112";
+            p112.Size = new Size(32, 23);
+            p112.TabIndex = 4;
             // 
-            // textBox82
+            // p14
             // 
-            textBox82.Location = new Point(598, 163);
-            textBox82.Name = "textBox82";
-            textBox82.Size = new Size(32, 23);
-            textBox82.TabIndex = 4;
+            p14.Location = new Point(598, 163);
+            p14.Name = "p14";
+            p14.Size = new Size(32, 23);
+            p14.TabIndex = 4;
             // 
-            // textBox343
+            // p124
             // 
-            textBox343.Location = new Point(598, 645);
-            textBox343.Name = "textBox343";
-            textBox343.Size = new Size(32, 23);
-            textBox343.TabIndex = 4;
+            p124.Location = new Point(598, 645);
+            p124.Name = "p124";
+            p124.Size = new Size(32, 23);
+            p124.TabIndex = 4;
             // 
-            // textBox259
+            // p118
             // 
-            textBox259.Location = new Point(598, 476);
-            textBox259.Name = "textBox259";
-            textBox259.Size = new Size(32, 23);
-            textBox259.TabIndex = 4;
+            p118.Location = new Point(598, 500);
+            p118.Name = "p118";
+            p118.Size = new Size(32, 23);
+            p118.TabIndex = 4;
             // 
-            // textBox175
+            // p111
             // 
-            textBox175.Location = new Point(598, 308);
-            textBox175.Name = "textBox175";
-            textBox175.Size = new Size(32, 23);
-            textBox175.TabIndex = 4;
+            p111.Location = new Point(598, 332);
+            p111.Name = "p111";
+            p111.Size = new Size(32, 23);
+            p111.TabIndex = 4;
             // 
-            // textBox70
+            // p13
             // 
-            textBox70.Location = new Point(598, 139);
-            textBox70.Name = "textBox70";
-            textBox70.Size = new Size(32, 23);
-            textBox70.TabIndex = 4;
+            p13.Location = new Point(598, 139);
+            p13.Name = "p13";
+            p13.Size = new Size(32, 23);
+            p13.TabIndex = 4;
             // 
-            // textBox342
+            // p123
             // 
-            textBox342.Location = new Point(598, 620);
-            textBox342.Name = "textBox342";
-            textBox342.Size = new Size(32, 23);
-            textBox342.TabIndex = 4;
+            p123.Location = new Point(598, 620);
+            p123.Name = "p123";
+            p123.Size = new Size(32, 23);
+            p123.TabIndex = 4;
             // 
-            // textBox258
+            // p117
             // 
-            textBox258.Location = new Point(598, 451);
-            textBox258.Name = "textBox258";
-            textBox258.Size = new Size(32, 23);
-            textBox258.TabIndex = 4;
+            p117.Location = new Point(598, 475);
+            p117.Name = "p117";
+            p117.Size = new Size(32, 23);
+            p117.TabIndex = 4;
             // 
-            // textBox174
+            // p110
             // 
-            textBox174.Location = new Point(598, 283);
-            textBox174.Name = "textBox174";
-            textBox174.Size = new Size(32, 23);
-            textBox174.TabIndex = 4;
+            p110.Location = new Point(598, 307);
+            p110.Name = "p110";
+            p110.Size = new Size(32, 23);
+            p110.TabIndex = 4;
             // 
-            // textBox58
+            // p12
             // 
-            textBox58.Location = new Point(598, 114);
-            textBox58.Name = "textBox58";
-            textBox58.Size = new Size(32, 23);
-            textBox58.TabIndex = 4;
+            p12.Location = new Point(598, 114);
+            p12.Name = "p12";
+            p12.Size = new Size(32, 23);
+            p12.TabIndex = 4;
             // 
-            // textBox341
+            // p16
             // 
-            textBox341.Location = new Point(598, 595);
-            textBox341.Name = "textBox341";
-            textBox341.Size = new Size(32, 23);
-            textBox341.TabIndex = 4;
+            p16.Location = new Point(598, 210);
+            p16.Name = "p16";
+            p16.Size = new Size(32, 23);
+            p16.TabIndex = 4;
             // 
-            // textBox257
+            // p116
             // 
-            textBox257.Location = new Point(598, 426);
-            textBox257.Name = "textBox257";
-            textBox257.Size = new Size(32, 23);
-            textBox257.TabIndex = 4;
+            p116.Location = new Point(598, 450);
+            p116.Name = "p116";
+            p116.Size = new Size(32, 23);
+            p116.TabIndex = 4;
             // 
-            // textBox173
+            // p19
             // 
-            textBox173.Location = new Point(598, 258);
-            textBox173.Name = "textBox173";
-            textBox173.Size = new Size(32, 23);
-            textBox173.TabIndex = 4;
+            p19.Location = new Point(598, 282);
+            p19.Name = "p19";
+            p19.Size = new Size(32, 23);
+            p19.TabIndex = 4;
             // 
-            // textBox46
+            // p11
             // 
-            textBox46.Location = new Point(598, 89);
-            textBox46.Name = "textBox46";
-            textBox46.Size = new Size(32, 23);
-            textBox46.TabIndex = 4;
+            p11.Location = new Point(598, 89);
+            p11.Name = "p11";
+            p11.Size = new Size(32, 23);
+            p11.TabIndex = 4;
             // 
-            // textBox340
+            // p122
             // 
-            textBox340.Location = new Point(598, 571);
-            textBox340.Name = "textBox340";
-            textBox340.Size = new Size(32, 23);
-            textBox340.TabIndex = 4;
+            p122.Location = new Point(598, 595);
+            p122.Name = "p122";
+            p122.Size = new Size(32, 23);
+            p122.TabIndex = 4;
             // 
-            // textBox256
+            // p115
             // 
-            textBox256.Location = new Point(598, 402);
-            textBox256.Name = "textBox256";
-            textBox256.Size = new Size(32, 23);
-            textBox256.TabIndex = 4;
+            p115.Location = new Point(598, 426);
+            p115.Name = "p115";
+            p115.Size = new Size(32, 23);
+            p115.TabIndex = 4;
             // 
-            // textBox172
+            // p18
             // 
-            textBox172.Location = new Point(598, 234);
-            textBox172.Name = "textBox172";
-            textBox172.Size = new Size(32, 23);
-            textBox172.TabIndex = 4;
+            p18.Location = new Point(598, 258);
+            p18.Name = "p18";
+            p18.Size = new Size(32, 23);
+            p18.TabIndex = 4;
             // 
-            // textBox34
+            // p10
             // 
-            textBox34.Location = new Point(598, 65);
-            textBox34.Name = "textBox34";
-            textBox34.Size = new Size(32, 23);
-            textBox34.TabIndex = 4;
+            p10.Location = new Point(598, 65);
+            p10.Name = "p10";
+            p10.Size = new Size(32, 23);
+            p10.TabIndex = 4;
             // 
-            // textBox339
+            // np27
             // 
-            textBox339.Location = new Point(560, 716);
-            textBox339.Name = "textBox339";
-            textBox339.Size = new Size(32, 23);
-            textBox339.TabIndex = 4;
+            np27.Location = new Point(560, 716);
+            np27.Name = "np27";
+            np27.Size = new Size(32, 23);
+            np27.TabIndex = 4;
             // 
-            // textBox255
+            // np20
             // 
-            textBox255.Location = new Point(560, 547);
-            textBox255.Name = "textBox255";
-            textBox255.Size = new Size(32, 23);
-            textBox255.TabIndex = 4;
+            np20.Location = new Point(560, 547);
+            np20.Name = "np20";
+            np20.Size = new Size(32, 23);
+            np20.TabIndex = 4;
             // 
-            // textBox171
+            // np13
             // 
-            textBox171.Location = new Point(560, 379);
-            textBox171.Name = "textBox171";
-            textBox171.Size = new Size(32, 23);
-            textBox171.TabIndex = 4;
+            np13.Location = new Point(560, 379);
+            np13.Name = "np13";
+            np13.Size = new Size(32, 23);
+            np13.TabIndex = 4;
             // 
-            // textBox105
+            // np6
             // 
-            textBox105.Location = new Point(560, 210);
-            textBox105.Name = "textBox105";
-            textBox105.Size = new Size(32, 23);
-            textBox105.TabIndex = 4;
+            np6.Location = new Point(560, 210);
+            np6.Name = "np6";
+            np6.Size = new Size(32, 23);
+            np6.TabIndex = 4;
             // 
-            // textBox338
+            // np26
             // 
-            textBox338.Location = new Point(560, 693);
-            textBox338.Name = "textBox338";
-            textBox338.Size = new Size(32, 23);
-            textBox338.TabIndex = 4;
+            np26.Location = new Point(560, 693);
+            np26.Name = "np26";
+            np26.Size = new Size(32, 23);
+            np26.TabIndex = 4;
             // 
-            // textBox254
+            // np19
             // 
-            textBox254.Location = new Point(560, 524);
-            textBox254.Name = "textBox254";
-            textBox254.Size = new Size(32, 23);
-            textBox254.TabIndex = 4;
+            np19.Location = new Point(560, 524);
+            np19.Name = "np19";
+            np19.Size = new Size(32, 23);
+            np19.TabIndex = 4;
             // 
-            // textBox170
+            // np12
             // 
-            textBox170.Location = new Point(560, 356);
-            textBox170.Name = "textBox170";
-            textBox170.Size = new Size(32, 23);
-            textBox170.TabIndex = 4;
+            np12.Location = new Point(560, 356);
+            np12.Name = "np12";
+            np12.Size = new Size(32, 23);
+            np12.TabIndex = 4;
             // 
-            // textBox93
+            // np5
             // 
-            textBox93.Location = new Point(560, 187);
-            textBox93.Name = "textBox93";
-            textBox93.Size = new Size(32, 23);
-            textBox93.TabIndex = 4;
+            np5.Location = new Point(560, 187);
+            np5.Name = "np5";
+            np5.Size = new Size(32, 23);
+            np5.TabIndex = 4;
             // 
-            // textBox337
+            // np25
             // 
-            textBox337.Location = new Point(560, 669);
-            textBox337.Name = "textBox337";
-            textBox337.Size = new Size(32, 23);
-            textBox337.TabIndex = 4;
+            np25.Location = new Point(560, 669);
+            np25.Name = "np25";
+            np25.Size = new Size(32, 23);
+            np25.TabIndex = 4;
             // 
-            // textBox253
+            // np18
             // 
-            textBox253.Location = new Point(560, 500);
-            textBox253.Name = "textBox253";
-            textBox253.Size = new Size(32, 23);
-            textBox253.TabIndex = 4;
+            np18.Location = new Point(560, 500);
+            np18.Name = "np18";
+            np18.Size = new Size(32, 23);
+            np18.TabIndex = 4;
             // 
-            // textBox169
+            // np11
             // 
-            textBox169.Location = new Point(560, 332);
-            textBox169.Name = "textBox169";
-            textBox169.Size = new Size(32, 23);
-            textBox169.TabIndex = 4;
+            np11.Location = new Point(560, 332);
+            np11.Name = "np11";
+            np11.Size = new Size(32, 23);
+            np11.TabIndex = 4;
             // 
-            // textBox81
+            // np4
             // 
-            textBox81.Location = new Point(560, 163);
-            textBox81.Name = "textBox81";
-            textBox81.Size = new Size(32, 23);
-            textBox81.TabIndex = 4;
+            np4.Location = new Point(560, 163);
+            np4.Name = "np4";
+            np4.Size = new Size(32, 23);
+            np4.TabIndex = 4;
             // 
-            // textBox336
+            // np24
             // 
-            textBox336.Location = new Point(560, 645);
-            textBox336.Name = "textBox336";
-            textBox336.Size = new Size(32, 23);
-            textBox336.TabIndex = 4;
+            np24.Location = new Point(560, 645);
+            np24.Name = "np24";
+            np24.Size = new Size(32, 23);
+            np24.TabIndex = 4;
             // 
-            // textBox252
+            // np17
             // 
-            textBox252.Location = new Point(560, 476);
-            textBox252.Name = "textBox252";
-            textBox252.Size = new Size(32, 23);
-            textBox252.TabIndex = 4;
+            np17.Location = new Point(560, 476);
+            np17.Name = "np17";
+            np17.Size = new Size(32, 23);
+            np17.TabIndex = 4;
             // 
-            // textBox168
+            // np10
             // 
-            textBox168.Location = new Point(560, 308);
-            textBox168.Name = "textBox168";
-            textBox168.Size = new Size(32, 23);
-            textBox168.TabIndex = 4;
+            np10.Location = new Point(560, 308);
+            np10.Name = "np10";
+            np10.Size = new Size(32, 23);
+            np10.TabIndex = 4;
             // 
-            // textBox69
+            // np3
             // 
-            textBox69.Location = new Point(560, 139);
-            textBox69.Name = "textBox69";
-            textBox69.Size = new Size(32, 23);
-            textBox69.TabIndex = 4;
+            np3.Location = new Point(560, 139);
+            np3.Name = "np3";
+            np3.Size = new Size(32, 23);
+            np3.TabIndex = 4;
             // 
-            // textBox335
+            // np23
             // 
-            textBox335.Location = new Point(560, 620);
-            textBox335.Name = "textBox335";
-            textBox335.Size = new Size(32, 23);
-            textBox335.TabIndex = 4;
+            np23.Location = new Point(560, 620);
+            np23.Name = "np23";
+            np23.Size = new Size(32, 23);
+            np23.TabIndex = 4;
             // 
-            // textBox251
+            // np16
             // 
-            textBox251.Location = new Point(560, 451);
-            textBox251.Name = "textBox251";
-            textBox251.Size = new Size(32, 23);
-            textBox251.TabIndex = 4;
+            np16.Location = new Point(560, 451);
+            np16.Name = "np16";
+            np16.Size = new Size(32, 23);
+            np16.TabIndex = 4;
             // 
-            // textBox167
+            // np9
             // 
-            textBox167.Location = new Point(560, 283);
-            textBox167.Name = "textBox167";
-            textBox167.Size = new Size(32, 23);
-            textBox167.TabIndex = 4;
+            np9.Location = new Point(560, 283);
+            np9.Name = "np9";
+            np9.Size = new Size(32, 23);
+            np9.TabIndex = 4;
             // 
-            // textBox57
+            // np2
             // 
-            textBox57.Location = new Point(560, 114);
-            textBox57.Name = "textBox57";
-            textBox57.Size = new Size(32, 23);
-            textBox57.TabIndex = 4;
+            np2.Location = new Point(560, 114);
+            np2.Name = "np2";
+            np2.Size = new Size(32, 23);
+            np2.TabIndex = 4;
             // 
-            // textBox334
+            // np22
             // 
-            textBox334.Location = new Point(560, 595);
-            textBox334.Name = "textBox334";
-            textBox334.Size = new Size(32, 23);
-            textBox334.TabIndex = 4;
+            np22.Location = new Point(560, 595);
+            np22.Name = "np22";
+            np22.Size = new Size(32, 23);
+            np22.TabIndex = 4;
             // 
-            // textBox250
+            // np15
             // 
-            textBox250.Location = new Point(560, 426);
-            textBox250.Name = "textBox250";
-            textBox250.Size = new Size(32, 23);
-            textBox250.TabIndex = 4;
+            np15.Location = new Point(560, 426);
+            np15.Name = "np15";
+            np15.Size = new Size(32, 23);
+            np15.TabIndex = 4;
             // 
-            // textBox166
+            // np8
             // 
-            textBox166.Location = new Point(560, 258);
-            textBox166.Name = "textBox166";
-            textBox166.Size = new Size(32, 23);
-            textBox166.TabIndex = 4;
+            np8.Location = new Point(560, 258);
+            np8.Name = "np8";
+            np8.Size = new Size(32, 23);
+            np8.TabIndex = 4;
             // 
-            // textBox45
+            // np1
             // 
-            textBox45.Location = new Point(560, 89);
-            textBox45.Name = "textBox45";
-            textBox45.Size = new Size(32, 23);
-            textBox45.TabIndex = 4;
+            np1.Location = new Point(560, 89);
+            np1.Name = "np1";
+            np1.Size = new Size(32, 23);
+            np1.TabIndex = 4;
             // 
-            // textBox333
+            // np21
             // 
-            textBox333.Location = new Point(560, 571);
-            textBox333.Name = "textBox333";
-            textBox333.Size = new Size(32, 23);
-            textBox333.TabIndex = 4;
+            np21.Location = new Point(560, 571);
+            np21.Name = "np21";
+            np21.Size = new Size(32, 23);
+            np21.TabIndex = 4;
             // 
-            // textBox249
+            // np14
             // 
-            textBox249.Location = new Point(560, 402);
-            textBox249.Name = "textBox249";
-            textBox249.Size = new Size(32, 23);
-            textBox249.TabIndex = 4;
+            np14.Location = new Point(560, 402);
+            np14.Name = "np14";
+            np14.Size = new Size(32, 23);
+            np14.TabIndex = 4;
             // 
-            // textBox165
+            // np7
             // 
-            textBox165.Location = new Point(560, 234);
-            textBox165.Name = "textBox165";
-            textBox165.Size = new Size(32, 23);
-            textBox165.TabIndex = 4;
+            np7.Location = new Point(560, 234);
+            np7.Name = "np7";
+            np7.Size = new Size(32, 23);
+            np7.TabIndex = 4;
             // 
-            // textBox33
+            // np0
             // 
-            textBox33.Location = new Point(560, 65);
-            textBox33.Name = "textBox33";
-            textBox33.Size = new Size(32, 23);
-            textBox33.TabIndex = 4;
+            np0.Location = new Point(560, 65);
+            np0.Name = "np0";
+            np0.Size = new Size(32, 23);
+            np0.TabIndex = 4;
             // 
             // g627
             // 
@@ -7683,22 +7897,6 @@
             loadSaveButton.UseVisualStyleBackColor = true;
             loadSaveButton.Click += loadSaveButton_Click;
             // 
-            // label122
-            // 
-            label122.AutoSize = true;
-            label122.Location = new Point(6, 209);
-            label122.Name = "label122";
-            label122.Size = new Size(28, 15);
-            label122.TabIndex = 3;
-            label122.Text = "Min";
-            // 
-            // miscBox18
-            // 
-            miscBox18.Location = new Point(87, 206);
-            miscBox18.Name = "miscBox18";
-            miscBox18.Size = new Size(49, 23);
-            miscBox18.TabIndex = 4;
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -8017,10 +8215,10 @@
         private Label loadSaveLabel;
         private Button loadSaveButton;
         private ComboBox comboBox1;
-        private TextBox textBox36;
-        private TextBox textBox35;
-        private TextBox textBox34;
-        private TextBox textBox33;
+        private TextBox p30;
+        private TextBox p20;
+        private TextBox p10;
+        private TextBox np0;
         private TextBox g60;
         private TextBox g50;
         private TextBox g40;
@@ -8070,66 +8268,66 @@
         private TextBox textBox48;
         private TextBox textBox270;
         private TextBox textBox186;
-        private TextBox textBox269;
-        private TextBox textBox185;
-        private TextBox textBox107;
-        private TextBox textBox268;
-        private TextBox textBox184;
-        private TextBox textBox95;
-        private TextBox textBox267;
-        private TextBox textBox183;
-        private TextBox textBox83;
-        private TextBox textBox266;
-        private TextBox textBox182;
-        private TextBox textBox71;
-        private TextBox textBox265;
-        private TextBox textBox181;
-        private TextBox textBox59;
-        private TextBox textBox264;
-        private TextBox textBox180;
-        private TextBox textBox47;
-        private TextBox textBox263;
-        private TextBox textBox179;
-        private TextBox textBox262;
-        private TextBox textBox178;
-        private TextBox textBox106;
-        private TextBox textBox261;
-        private TextBox textBox177;
-        private TextBox textBox94;
-        private TextBox textBox260;
-        private TextBox textBox176;
-        private TextBox textBox82;
-        private TextBox textBox259;
-        private TextBox textBox175;
-        private TextBox textBox70;
-        private TextBox textBox258;
-        private TextBox textBox174;
-        private TextBox textBox58;
-        private TextBox textBox257;
-        private TextBox textBox173;
-        private TextBox textBox46;
-        private TextBox textBox256;
-        private TextBox textBox172;
-        private TextBox textBox255;
-        private TextBox textBox171;
-        private TextBox textBox105;
-        private TextBox textBox254;
-        private TextBox textBox170;
-        private TextBox textBox93;
-        private TextBox textBox253;
-        private TextBox textBox169;
-        private TextBox textBox81;
-        private TextBox textBox252;
-        private TextBox textBox168;
-        private TextBox textBox69;
-        private TextBox textBox251;
-        private TextBox textBox167;
-        private TextBox textBox57;
-        private TextBox textBox250;
-        private TextBox textBox166;
-        private TextBox textBox45;
-        private TextBox textBox249;
-        private TextBox textBox165;
+        private TextBox p220;
+        private TextBox p213;
+        private TextBox p26;
+        private TextBox p219;
+        private TextBox p212;
+        private TextBox p25;
+        private TextBox p218;
+        private TextBox p211;
+        private TextBox p24;
+        private TextBox p217;
+        private TextBox p210;
+        private TextBox p23;
+        private TextBox p216;
+        private TextBox p29;
+        private TextBox p22;
+        private TextBox p215;
+        private TextBox p28;
+        private TextBox p21;
+        private TextBox p214;
+        private TextBox p27;
+        private TextBox p121;
+        private TextBox p114;
+        private TextBox p17;
+        private TextBox p120;
+        private TextBox p113;
+        private TextBox p15;
+        private TextBox p119;
+        private TextBox p112;
+        private TextBox p14;
+        private TextBox p118;
+        private TextBox p111;
+        private TextBox p13;
+        private TextBox p117;
+        private TextBox p110;
+        private TextBox p12;
+        private TextBox p116;
+        private TextBox p19;
+        private TextBox p11;
+        private TextBox p115;
+        private TextBox p18;
+        private TextBox np20;
+        private TextBox np13;
+        private TextBox np6;
+        private TextBox np19;
+        private TextBox np12;
+        private TextBox np5;
+        private TextBox np18;
+        private TextBox np11;
+        private TextBox np4;
+        private TextBox np17;
+        private TextBox np10;
+        private TextBox np3;
+        private TextBox np16;
+        private TextBox np9;
+        private TextBox np2;
+        private TextBox np15;
+        private TextBox np8;
+        private TextBox np1;
+        private TextBox np14;
+        private TextBox np7;
         private TextBox g620;
         private TextBox g613;
         private TextBox g66;
@@ -8324,27 +8522,27 @@
         private TextBox textBox356;
         private TextBox textBox355;
         private TextBox textBox354;
-        private TextBox textBox353;
-        private TextBox textBox352;
-        private TextBox textBox351;
-        private TextBox textBox350;
-        private TextBox textBox349;
-        private TextBox textBox348;
-        private TextBox textBox347;
-        private TextBox textBox346;
-        private TextBox textBox345;
-        private TextBox textBox344;
-        private TextBox textBox343;
-        private TextBox textBox342;
-        private TextBox textBox341;
-        private TextBox textBox340;
-        private TextBox textBox339;
-        private TextBox textBox338;
-        private TextBox textBox337;
-        private TextBox textBox336;
-        private TextBox textBox335;
-        private TextBox textBox334;
-        private TextBox textBox333;
+        private TextBox p227;
+        private TextBox p226;
+        private TextBox p225;
+        private TextBox p224;
+        private TextBox p223;
+        private TextBox p222;
+        private TextBox p221;
+        private TextBox p127;
+        private TextBox p126;
+        private TextBox p125;
+        private TextBox p124;
+        private TextBox p123;
+        private TextBox p16;
+        private TextBox p122;
+        private TextBox np27;
+        private TextBox np26;
+        private TextBox np25;
+        private TextBox np24;
+        private TextBox np23;
+        private TextBox np22;
+        private TextBox np21;
         private TextBox g627;
         private TextBox g626;
         private TextBox g625;
@@ -8450,7 +8648,7 @@
         private TextBox textBox61;
         private TextBox textBox49;
         private TextBox textBox37;
-        private TextBox textBox25;
+        private TextBox fl0;
         private TextBox textBox438;
         private TextBox tt27;
         private TextBox textBox437;
@@ -8505,12 +8703,14 @@
         private TextBox tt14;
         private TextBox textBox412;
         private TextBox tt7;
-        private TextBox textBox411;
+        private TextBox fs0;
         private TextBox tt0;
         private Label label166;
         private Label label165;
         private TextBox infoBox;
         private TextBox miscBox18;
         private Label label122;
+        private Label numbperLabel;
+        private Label label123;
     }
 }

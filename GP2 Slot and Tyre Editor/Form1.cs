@@ -1424,6 +1424,26 @@ namespace GP2_Slot_and_Tyre_Editor
                     setAll("g5", 6, gp2Lib);
                     setAll("g6", 7, gp2Lib);
                     setAll("tt", 8, gp2Lib);
+
+                    int[] pitData;
+                    if (gp2Lib.GetSessionInfo() == 128)
+                    {
+                        numbperLabel.Text = "Lap numbers";
+                        pitData = gp2Lib.GetPitStructs();
+                        setPitStrategy("np", 0, gp2Lib, pitData, 4);
+                        setPitStrategy("p1", 1, gp2Lib, pitData, 4);
+                        setPitStrategy("p2", 2, gp2Lib, pitData, 4);
+                        //setPitStrategy("p3", 3, gp2Lib, pitData, 3);
+                    }
+                    else
+                    {
+                        numbperLabel.Text = "Race percentage";
+                        pitData = gp2Lib.GetPitBase();
+                        setPitStrategy("np", 0, gp2Lib, pitData, 5);
+                        setPitStrategy("p1", 2, gp2Lib, pitData, 5);
+                        setPitStrategy("p2", 3, gp2Lib, pitData, 5);
+                        //setPitStrategy("p3", 4, gp2Lib, pitData, 5);
+                    }
                 }
             }
         }
@@ -1446,7 +1466,18 @@ namespace GP2_Slot_and_Tyre_Editor
             for (int i = 0; i < number_of_cars; i++)
             {
                 TextBox field_box = (TextBox)savePage.Controls[$"{boxName}{i}"];
-                field_box.Text = $"{setups[i][index + 9 * offset]}";
+                field_box.Text = $"{setups[i][index]}";
+            }
+        }
+
+        void setPitStrategy(string boxName, int index, GP2Lib gp2lib, int[] data, int offsets)
+        {
+            TabPage savePage = tabsPage.TabPages["savePage"];
+            int number_of_cars = gp2lib.GetNumberOfCars();
+            for (int i = 0; i < number_of_cars; i++)
+            {
+                TextBox field_box = (TextBox)savePage.Controls[$"{boxName}{i}"];
+                field_box.Text = $"{data[index + i * offsets]}";
             }
         }
     }
