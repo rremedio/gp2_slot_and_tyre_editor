@@ -1538,7 +1538,7 @@ namespace GP2_Slot_and_Tyre_Editor
                         setupData[i][6] = Convert.ToInt32(g5.Text);
                         setupData[i][7] = Convert.ToInt32(g6.Text);
                         setupData[i][8] = Convert.ToInt32(tt.Text);
-                        Debug.WriteLine(string.Join(", ", setupData[i]));
+                        //Debug.WriteLine(string.Join(", ", setupData[i]));
                     }
                     TextBox np = (TextBox)savePage.Controls[$"np{i}"];
                     TextBox p1 = (TextBox)savePage.Controls[$"p1{i}"];
@@ -1551,7 +1551,7 @@ namespace GP2_Slot_and_Tyre_Editor
                         pitData[i][1] = Convert.ToInt32(p1.Text);
                         pitData[i][2] = Convert.ToInt32(p2.Text);
                         pitData[i][3] = Convert.ToInt32(p3.Text);
-                        Debug.WriteLine(string.Join(", ", pitData[i]));
+                        //Debug.WriteLine(string.Join(", ", pitData[i]));
                     }
                 }
                 string filePath = loadSaveLabel.Text;

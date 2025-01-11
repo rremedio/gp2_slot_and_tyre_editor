@@ -22,6 +22,9 @@ namespace GP2_Slot_and_Tyre_Editor
         public List<int> carNumbers;
         public List<string> driverNames;
         public List<int> playerNumbers;
+        public List<int> setupOffsets;
+        public List<int> pitOffsets;
+        public List<int> pitSctructOffsets;
 
         public GP2Lib()
         {
@@ -29,6 +32,9 @@ namespace GP2_Slot_and_Tyre_Editor
             carNumbers = new List<int>();
             driverNames = new List<string>();
             playerNumbers = new List<int>();
+            setupOffsets = new List<int>();
+            pitOffsets = new List<int>();
+            pitSctructOffsets = new List<int>();
         }
 
         public void OpenFile(string filename)
@@ -70,38 +76,48 @@ namespace GP2_Slot_and_Tyre_Editor
 
             byte[] trimmedDecompressedData = new byte[decompressedSize - 4];
             Array.Copy(decompressedData, 0, trimmedDecompressedData, 0, decompressedSize - 4);
-
+            //return CombineArrays(header, trimmedDecompressedData);
             return CalculateChecksum(CombineArrays(header, trimmedDecompressedData));
         }
 
         private byte[] CalculateChecksum(byte[] data)
         {
-            byte[] checksumA = new byte[2];
-            byte[] checksumB = new byte[2];
-
+            // Allocate memory for the data and checksums
             IntPtr dataPtr = Marshal.AllocHGlobal(data.Length);
-            IntPtr checksumAPtr = Marshal.AllocHGlobal(2);
-            IntPtr checksumBPtr = Marshal.AllocHGlobal(2);
+            IntPtr checksumAPtr = Marshal.AllocHGlobal(2); // 2 bytes for checksum A
+            IntPtr checksumBPtr = Marshal.AllocHGlobal(2); // 2 bytes for checksum B
 
-            Marshal.Copy(data, 0, dataPtr, data.Length);
+            try
+            {
+                // Copy the data array to unmanaged memory
+                Marshal.Copy(data, 0, dataPtr, data.Length);
 
-            GP2_CalcChecksum(dataPtr, data.Length, checksumAPtr, checksumBPtr);
+                // Call the DLL function
+                GP2_CalcChecksum(dataPtr, data.Length, checksumAPtr, checksumBPtr);
 
-            Marshal.Copy(checksumAPtr, checksumA, 0, 2);
-            Marshal.Copy(checksumBPtr, checksumB, 0, 2);
+                // Retrieve the results
+                byte[] checksumA = new byte[2];
+                byte[] checksumB = new byte[2];
+                Marshal.Copy(checksumAPtr, checksumA, 0, 2);
+                Marshal.Copy(checksumBPtr, checksumB, 0, 2);
 
-            Marshal.FreeHGlobal(dataPtr);
-            Marshal.FreeHGlobal(checksumAPtr);
-            Marshal.FreeHGlobal(checksumBPtr);
-
-            return CombineArrays(data, checksumA, checksumB);
+                // Combine the input data with the checksums
+                return CombineArrays(data, checksumA, checksumB);
+            }
+            finally
+            {
+                // Free unmanaged memory
+                Marshal.FreeHGlobal(dataPtr);
+                Marshal.FreeHGlobal(checksumAPtr);
+                Marshal.FreeHGlobal(checksumBPtr);
+            }
         }
 
         private static byte[] CombineArrays(byte[] first, byte[] second, byte[] third = null)
         {
             int totalLength = first.Length + second.Length + (third?.Length ?? 0);
             byte[] result = new byte[totalLength];
-
+            
             Array.Copy(first, 0, result, 0, first.Length);
             Array.Copy(second, 0, result, first.Length, second.Length);
             if (third != null)
@@ -189,24 +205,19 @@ namespace GP2_Slot_and_Tyre_Editor
             //int number_of_cars = GetNumberOfCars();
             int[] carNumbers = GetDriverNumbers();
             int[][] data = new int[28][];
+            setupOffsets.Clear();
 
             for (int i = 0; i < 28; i++)
             {
-                // Calculate the start and end offsets for this car's data
                 int startOffset = 296 + carNumbers[i] * 48;
                 int endOffset = 304 + carNumbers[i] * 48;
 
-                // Determine the length of data for this car
-                int length = endOffset - startOffset;
-
-                // Initialize the sub-array for this car
                 data[i] = new int[9];
 
-                // Copy data from `file` into the sub-array
                 int k = 0;
+                setupOffsets.Add(startOffset);
                 for (int j = startOffset; j <= endOffset; j++)
                 {
-
                     data[i][k] = file[j];
                     k++;
                 }
@@ -238,21 +249,15 @@ namespace GP2_Slot_and_Tyre_Editor
             List<int> pits = new List<int>();
             int[] order = GetStructOrder();
             int[] carNumbers = GetDriverNumbers();
-           // int numberOfCars = GetNumberOfCars();
-
-            // Create order2 by finding the index of each car number in the order array
+            pitSctructOffsets.Clear();
             List<int> order2 = carNumbers.Select(car => Array.IndexOf(order, car)).ToList();
-            Debug.WriteLine(string.Join(", ", order));
-            Debug.WriteLine(string.Join(", ", carNumbers));
-            Debug.WriteLine(string.Join(", ", order2));
-            // Iterate through the number of cars and retrieve the relevant bytes
+
             for (int i = 0; i < 28; i++)
             {
                 int orderedIndex = order2[i];
                 if (order2[i] == -1) orderedIndex = 27;
                 int baseIndex = 0x3E4B + orderedIndex * 0x330 + 0x274;
-
-                // Extract bytes from the range [baseIndex, baseIndex + 3]
+                pitSctructOffsets.Add(baseIndex);
                 for (int j = baseIndex; j <= baseIndex + 3; j++)
                 {
                     pits.Add(file[j]);
@@ -266,13 +271,13 @@ namespace GP2_Slot_and_Tyre_Editor
         {
             List<int> pits = new List<int>();
             int[] carNumbers = GetDriverNumbers();
-           // int numberOfCars = GetNumberOfCars();
+            pitOffsets.Clear();
 
             for (int i = 0; i <28; i++)
             {
                 int startIndex = 344 - 48 + carNumbers[i] * 48 + 10;
 
-                // Extract bytes from the range [startIndex, startIndex + 4]
+                pitOffsets.Add(startIndex);
                 for (int j = startIndex; j <= startIndex + 4; j++)
                 {
                     pits.Add(file[j]);
@@ -285,19 +290,25 @@ namespace GP2_Slot_and_Tyre_Editor
         public void FileToSave(int[][] setupData, int[][] pitData)
         {
             int[] carNumbers = GetDriverNumbers();
-
+            Debug.WriteLine("==============");
+            Debug.WriteLine(string.Join(", ", carNumbers));
             for (int i = 0; i < 28; i++)
             {
-                // Calculate the start and end offsets for this car's data
-                int startOffset = 296 + carNumbers[i] * 48;
-                int endOffset = 304 + carNumbers[i] * 48;
-                int k = 0;
-                Debug.WriteLine(string.Join(", ", setupData[i]));
-                for (int j = startOffset; j <= endOffset; j++)
+                if (carNumbers[i] > 0)
                 {
-                    Debug.WriteLine($"{setupData[i][k]}");
-                    file[j] = (byte)setupData[i][k];
-                    k++;
+                    // Calculate the start and end offsets for this car's data
+                    int startOffset = setupOffsets[i];
+                    int endOffset = startOffset + 8;
+                
+                    int k = 0;
+                    Debug.WriteLine($"{carNumbers[i]}");
+                    Debug.WriteLine(string.Join(", ", setupData[i]));
+                    for (int j = startOffset; j <= endOffset; j++)
+                    {
+                        Debug.WriteLine($"{setupData[i][k]}");
+                        file[j] = (byte)setupData[i][k];
+                        k++;
+                    }
                 }
             }
 
@@ -308,9 +319,9 @@ namespace GP2_Slot_and_Tyre_Editor
                 List<int> order2 = carNumbers.Select(car => Array.IndexOf(order, car)).ToList();
                 for (int i = 0; i < 28; i++)
                 {
-                    int orderedIndex = order2[i];
-                    if (order2[i] == -1) orderedIndex = 27;
-                    int baseIndex = 0x3E4B + orderedIndex * 0x330 + 0x274;
+                    //int orderedIndex = order2[i];
+                    //if (order2[i] == -1) orderedIndex = 27;
+                    int baseIndex = pitSctructOffsets[i];
                     int k = 0;
                     for (int j = baseIndex; j <= baseIndex + 3; j++)
                     {
@@ -325,23 +336,31 @@ namespace GP2_Slot_and_Tyre_Editor
 
                 for (int i = 0; i < 28; i++)
                 {
-                    int startIndex = 344 - 48 + carNumbers[i] * 48 + 10;
+                    int startIndex = pitOffsets[i];
                     int k = 0;
                     for (int j = startIndex; j <= startIndex + 4; j++)
                     {
-                        if (k != 1)
+                        if (j != startIndex + 1)
                         {
                             file[j] = (byte)pitData[i][k];
+                            k++;
                         }
-                        k++;
                     }
                 }
             }
 
+            UpdateChecksum();
+        }
+
+        public void UpdateChecksum()
+        {
             int decompressedSize = file.Length - 4;
             byte[] trimmedDecompressedData = new byte[decompressedSize];
             Array.Copy(file, 0, trimmedDecompressedData, 0, decompressedSize);
             file = CalculateChecksum(trimmedDecompressedData);
+            Debug.WriteLine("--------------");
+            Debug.WriteLine($"{file.Length}");
+            Debug.WriteLine("--------------");
         }
 
         public bool SaveFile(string fileName)
