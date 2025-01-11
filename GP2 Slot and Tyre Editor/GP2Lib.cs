@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Runtime.InteropServices;
 using System.DirectoryServices.ActiveDirectory;
 using System.Diagnostics;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace GP2_Slot_and_Tyre_Editor
 {
@@ -203,7 +204,7 @@ namespace GP2_Slot_and_Tyre_Editor
 
                 // Copy data from `file` into the sub-array
                 int k = 0;
-                for (int j = startOffset; j < endOffset; j++)
+                for (int j = startOffset; j <= endOffset; j++)
                 {
 
                     data[i][k] = file[j];
@@ -279,6 +280,82 @@ namespace GP2_Slot_and_Tyre_Editor
             }
 
             return pits.ToArray();
+        }
+
+        public void FileToSave(int[][] setupData, int[][] pitData)
+        {
+            int[] carNumbers = GetDriverNumbers();
+
+            for (int i = 0; i < 28; i++)
+            {
+                // Calculate the start and end offsets for this car's data
+                int startOffset = 296 + carNumbers[i] * 48;
+                int endOffset = 304 + carNumbers[i] * 48;
+                int k = 0;
+                Debug.WriteLine(string.Join(", ", setupData[i]));
+                for (int j = startOffset; j <= endOffset; j++)
+                {
+                    Debug.WriteLine($"{setupData[i][k]}");
+                    file[j] = (byte)setupData[i][k];
+                    k++;
+                }
+            }
+
+            if (GetSessionInfo() == 128)
+            {
+                List<int> pits = new List<int>();
+                int[] order = GetStructOrder();
+                List<int> order2 = carNumbers.Select(car => Array.IndexOf(order, car)).ToList();
+                for (int i = 0; i < 28; i++)
+                {
+                    int orderedIndex = order2[i];
+                    if (order2[i] == -1) orderedIndex = 27;
+                    int baseIndex = 0x3E4B + orderedIndex * 0x330 + 0x274;
+                    int k = 0;
+                    for (int j = baseIndex; j <= baseIndex + 3; j++)
+                    {
+                        file[j] = (byte)pitData[i][k];
+                        k++;
+                    }
+                }
+            }
+            else
+            {
+                List<int> pits = new List<int>();
+
+                for (int i = 0; i < 28; i++)
+                {
+                    int startIndex = 344 - 48 + carNumbers[i] * 48 + 10;
+                    int k = 0;
+                    for (int j = startIndex; j <= startIndex + 4; j++)
+                    {
+                        if (k != 1)
+                        {
+                            file[j] = (byte)pitData[i][k];
+                        }
+                        k++;
+                    }
+                }
+            }
+
+            int decompressedSize = file.Length - 4;
+            byte[] trimmedDecompressedData = new byte[decompressedSize];
+            Array.Copy(file, 0, trimmedDecompressedData, 0, decompressedSize);
+            file = CalculateChecksum(trimmedDecompressedData);
+        }
+
+        public bool SaveFile(string fileName)
+        {
+            try
+            {
+                File.WriteAllBytes(fileName, file);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error saving file: {ex.Message}");
+            }
+            return false;
         }
     }
 }

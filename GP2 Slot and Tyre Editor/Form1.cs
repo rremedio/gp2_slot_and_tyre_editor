@@ -1,6 +1,7 @@
 using Microsoft.VisualBasic;
 using System;
 using System.IO;
+using System.Windows;
 using System.Diagnostics;
 using System.Security.Cryptography.X509Certificates;
 using System.Windows.Forms;
@@ -19,6 +20,7 @@ namespace GP2_Slot_and_Tyre_Editor
 {
     public partial class Form1 : Form
     {
+        public GP2Lib gp2Lib;
         public Form1()
         {
             InitializeComponent();
@@ -75,6 +77,22 @@ namespace GP2_Slot_and_Tyre_Editor
                         {
                             gp2LocationLabel.Text = $"{location}";
                         }
+                        else
+                        {
+                            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+                            {
+                                // Configure the file dialog
+                                openFileDialog.Filter = "GP2.exe|GP2.exe";
+                                openFileDialog.Title = "Select a file to open";
+
+                                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                                {
+                                    string gp2_location = openFileDialog.FileName;
+                                    SaveLocation(gp2_location);
+                                    gp2LocationLabel.Text = gp2_location;
+                                }
+                            }
+                        }
                         return;
                     }
                 }
@@ -112,7 +130,7 @@ namespace GP2_Slot_and_Tyre_Editor
                     if (locationUpdated)
                     {
                         File.WriteAllLines(iniFilePath, lines);
-                        MessageBox.Show("file saved!");
+                        //MessageBox.Show("file saved!");
                     }
 
                 }
@@ -1397,7 +1415,7 @@ namespace GP2_Slot_and_Tyre_Editor
                     TabPage savePage = tabsPage.TabPages["savePage"];
                     Label label = (Label)savePage.Controls["loadSaveLabel"];
                     label.Text = save_file;
-                    GP2Lib gp2Lib = new GP2Lib();
+                    gp2Lib = new GP2Lib();
 
                     // Open and decompress the file
                     gp2Lib.OpenFile(save_file);
@@ -1433,7 +1451,7 @@ namespace GP2_Slot_and_Tyre_Editor
                         setPitStrategy("np", 0, gp2Lib, pitData, 4);
                         setPitStrategy("p1", 1, gp2Lib, pitData, 4);
                         setPitStrategy("p2", 2, gp2Lib, pitData, 4);
-                        //setPitStrategy("p3", 3, gp2Lib, pitData, 3);
+                        setPitStrategy("p3", 3, gp2Lib, pitData, 4);
                     }
                     else
                     {
@@ -1442,8 +1460,9 @@ namespace GP2_Slot_and_Tyre_Editor
                         setPitStrategy("np", 0, gp2Lib, pitData, 5);
                         setPitStrategy("p1", 2, gp2Lib, pitData, 5);
                         setPitStrategy("p2", 3, gp2Lib, pitData, 5);
-                        //setPitStrategy("p3", 4, gp2Lib, pitData, 5);
+                        setPitStrategy("p3", 4, gp2Lib, pitData, 5);
                     }
+                    button21.Enabled = true;
                 }
             }
         }
@@ -1479,6 +1498,90 @@ namespace GP2_Slot_and_Tyre_Editor
                 TextBox field_box = (TextBox)savePage.Controls[$"{boxName}{i}"];
                 field_box.Text = $"{data[index + i * offsets]}";
             }
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show(
+                "Do you want to save changes?",
+                "Confirmation",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                int[][] setupData = new int[28][];
+                int[][] pitData = new int[28][];
+
+                for (int i = 0; i < 28; i++)
+                {
+                    setupData[i] = new int[9];
+                    TabPage savePage = tabsPage.TabPages["savePage"];
+                    TextBox fw = (TextBox)savePage.Controls[$"fw{i}"];
+                    TextBox rw = (TextBox)savePage.Controls[$"rw{i}"];
+                    TextBox g1 = (TextBox)savePage.Controls[$"g1{i}"];
+                    TextBox g2 = (TextBox)savePage.Controls[$"g2{i}"];
+                    TextBox g3 = (TextBox)savePage.Controls[$"g3{i}"];
+                    TextBox g4 = (TextBox)savePage.Controls[$"g4{i}"];
+                    TextBox g5 = (TextBox)savePage.Controls[$"g5{i}"];
+                    TextBox g6 = (TextBox)savePage.Controls[$"g6{i}"];
+                    TextBox tt = (TextBox)savePage.Controls[$"tt{i}"];
+                    Label driver = (Label)savePage.Controls[$"driver{i}"];
+                    if (driver.Text != "")
+                    {
+                        setupData[i][0] = Convert.ToInt32(fw.Text);
+                        setupData[i][1] = Convert.ToInt32(rw.Text);
+                        setupData[i][2] = Convert.ToInt32(g1.Text);
+                        setupData[i][3] = Convert.ToInt32(g2.Text);
+                        setupData[i][4] = Convert.ToInt32(g3.Text);
+                        setupData[i][5] = Convert.ToInt32(g4.Text);
+                        setupData[i][6] = Convert.ToInt32(g5.Text);
+                        setupData[i][7] = Convert.ToInt32(g6.Text);
+                        setupData[i][8] = Convert.ToInt32(tt.Text);
+                        Debug.WriteLine(string.Join(", ", setupData[i]));
+                    }
+                    TextBox np = (TextBox)savePage.Controls[$"np{i}"];
+                    TextBox p1 = (TextBox)savePage.Controls[$"p1{i}"];
+                    TextBox p2 = (TextBox)savePage.Controls[$"p2{i}"];
+                    TextBox p3 = (TextBox)savePage.Controls[$"p3{i}"];
+                    pitData[i] = new int[4];
+                    if (driver.Text != "")
+                    {
+                        pitData[i][0] = Convert.ToInt32(np.Text);
+                        pitData[i][1] = Convert.ToInt32(p1.Text);
+                        pitData[i][2] = Convert.ToInt32(p2.Text);
+                        pitData[i][3] = Convert.ToInt32(p3.Text);
+                        Debug.WriteLine(string.Join(", ", pitData[i]));
+                    }
+                }
+                string filePath = loadSaveLabel.Text;
+                gp2Lib.FileToSave(setupData, pitData);
+
+                bool saved = gp2Lib.SaveFile(filePath);
+
+                Debug.WriteLine(!saved);
+            }
+        }
+
+        private void sessionDurationButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            string aboutText = "GP2 Slot and Tyre Editor 5.0\r\n\r\n";
+            aboutText += "Author: rremedio\r\n\r\n";
+            aboutText += "Features inspired by:\r\n";
+            aboutText += "GPxPatch by Rene Smit\r\n";
+            aboutText += "Quick 'n Dirt Physics Editor by Aubrey Windle\r\n";
+            aboutText += "GP3 Advanced Physics Editor by Aubrey Windle\r\n";
+            aboutText += "GP2Limit by Philip Woodward\r\n";
+            aboutText += "GP2 2010 Pit Stop Patch by Belini and Michael Raballand (GP2 convertion)\r\n";
+            aboutText += "Belini Grip Patch by Belini\r\n\r\n";
+            aboutText += "Thanks to Petri Kattunen, Andreas Schulz, Mario B. Jr. (SuperSonic), Michael Raballand, Markus 'Fireball' Rotter, Antonio Pessoa and Thomas Kost!\r\n\r\n";
+            aboutText += "Very Special Thanks to Rene 'SDI' Smit and Emerson dos Santos!";
+            MessageBox.Show(aboutText);
         }
     }
 }
