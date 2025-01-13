@@ -661,10 +661,14 @@ namespace GP2_Slot_and_Tyre_Editor
         private void exportTireData(GP2Handler gp2Handler)
         {
             TabPage tabPage = tabsPage.TabPages["miscPage"];
-            for (int i = 1; i < 9; i++)
+            for (int i = 1; i < 10; i++)
             {
                 long address = GP2Addresses.TireAddresses[i - 1];
-                string textBoxName = "miscBox" + i;
+                string textBoxName = "miscBox18";
+                if (i < 9)
+                {
+                    textBoxName = "miscBox" + i;
+                }
                 TextBox textBox = (TextBox)tabPage.Controls[textBoxName];
                 if (textBox != null)
                 {
@@ -781,9 +785,14 @@ namespace GP2_Slot_and_Tyre_Editor
             TabPage tabPage = tabsPage.TabPages["miscPage"];
             bool isNum;
             bool allNum = true;
-            for (int i = 1; i < 9; i++)
+            for (int i = 1; i < 10; i++)
             {
-                string textBoxName = "miscBox" + i;
+                string textBoxName = "miscBox18";
+                if (i < 9)
+                {
+                    textBoxName = "miscBox" + i;
+                }
+                
                 TextBox textBox = (TextBox)tabPage.Controls[textBoxName];
                 if (textBox != null)
                 {
